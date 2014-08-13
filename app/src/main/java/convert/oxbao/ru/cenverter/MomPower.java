@@ -6,9 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class SecondFragment extends Fragment {
+public class MomPower extends Fragment {
 
-    public SecondFragment() {
+    public MomPower() {
     }
 
     @Override

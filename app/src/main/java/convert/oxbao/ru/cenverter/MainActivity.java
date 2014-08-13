@@ -61,7 +61,12 @@ public class MainActivity extends ActionBarActivity {
                 break;
             case 1:
                 fragment = new SecondFragment();
+                break;
+            case 2:
+                fragment = new MomPower();
+                break;
             default:
+
             break;
         }
 
