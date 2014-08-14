@@ -19,6 +19,8 @@
         android:divider="@android:color/holo_orange_dark"
         android:dividerHeight="2dp"
         android:listSelector="@android:drawable/list_selector_background"
-        android:background="@android:color/darker_gray"/>
+        android:background="@color/navigation_color"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="false" />
 
 </android.support.v4.widget.DrawerLayout>
