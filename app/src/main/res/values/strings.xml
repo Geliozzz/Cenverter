@@ -8,7 +8,7 @@
     <string name="Enter_Unit">Введите данные</string>
     <string name="AngleSpeed">Угловая скорость</string>
 
-    <string-array name="unitList">
+    <string-array name="AngleSpeed">
         <item>Радиан в секунду[рад/c]</item>
         <item>Радиан в сутки[рад/cут.]</item>
         <item>Радиан в час[рад/ч]</item>
@@ -23,8 +23,45 @@
         <item>Оборотов в секунду[об/с]</item>
         </string-array>
 
+    <string-array name="Title_area">
+        <item>Квадратный метр[м<sup>2</sup>]-my_split-1.0</item>
+        <item>Квадратный километр[км<sup>2</sup>]</item>
+        <item>Квадратный гектометр[гм<sup>2</sup>]</item>
+        <item>Квадратный декаметр[дам<sup>2</sup>]</item>
+        <item>Квадратный дециметр[дм<sup>2</sup>]</item>
+        <item>Квадратный сантиметр[см<sup>2</sup>]</item>
+        <item>Квадратный миллиметр[мм<sup>2</sup>]</item>
+        <item>Квадратный нанометр[нм<sup>2</sup>]</item>
+        <item>гектар[га]</item>
+        <item>ар[а]</item>
+        <item>барн[бн]</item>
+        <item>квадратная миля[миля<sup>2</sup>]</item>
+        <item>кв. миля (США, геодез.)[миля<sup>2</sup>]</item>
+        <item>квадратный ярд[ярд<sup>2</sup>]</item>
+        <item>квадратный фут[фут<sup>2</sup>]</item>
+        <item>кв.фут(США,геодез.)[фут<sup>2</sup>]</item>
+        <item>квадратный дюйм[круговой дюйм]</item>
+        <item>тауншип</item>
+        <item>секция</item>
+        <item>акр[акр]</item>
+        <item>акр(США,геодез.)[акр]</item>
+        <item>руд</item>
+        <item>квадратный чейн[чейн<sup>2</sup>]</item>
+        <item>квадратный род[род<sup>2</sup>]</item>
+        <item>кв.тысячная[тысячная<sup>2</sup>]</item>
+        <item>круговой мил[круг.мил]</item>
+        <item>хомстед</item>
+        <item>сабин</item>
+        <item>арпан</item>
+        <item>куэрда</item>
+        <item>квадратный кастильский локоть</item>
+        <item>varas conugueras cuad</item>
+        <item>поперечное сечение электрона</item>
 
-    <string-array name="unitCoeff">
+    </string-array>
+
+
+    <string-array name="coeffMoment">
         <item>1.0</item>
         <item>86400</item>
         <item>3600</item>
