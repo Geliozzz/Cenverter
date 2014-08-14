@@ -9,72 +9,74 @@
     <string name="AngleSpeed">Угловая скорость</string>
 
     <string-array name="AngleSpeed">
-        <item>Радиан в секунду[рад/c]</item>
-        <item>Радиан в сутки[рад/cут.]</item>
-        <item>Радиан в час[рад/ч]</item>
-        <item>Радиан в минуту[рад/мин]</item>
-        <item>Градус в сутки[°/сутки]</item>
-        <item>Градус в час[°/час]</item>
-        <item>Градус в минуту[°/мин]</item>
-        <item>Градус в секунду[°/с]</item>
-        <item>Оборотов в сутки[об/сутки]</item>
-        <item>Оборотов в час[об/ч]</item>
-        <item>Оборотов в минуту[об/мин]</item>
-        <item>Оборотов в секунду[об/с]</item>
+        <item>Радиан в секунду[рад/c]-my_split-1.0</item>
+        <item>Радиан в сутки[рад/cут.]-my_split-86400.0</item>
+        <item>Радиан в час[рад/ч]-my_split-3600.0</item>
+        <item>Радиан в минуту[рад/мин]-my_split-60.0</item>
+        <item>Градус в сутки[°/сутки]-my_split-4950355.34993</item>
+        <item>Градус в час[°/час]-my_split-206264.8062471</item>
+        <item>Градус в минуту[°/мин]-my_split-3437.746770785</item>
+        <item>Градус в секунду[°/с]-my_split-57.29577951308</item>
+        <item>Оборотов в сутки[об/сутки]-my_split-13750.98708314</item>
+        <item>Оборотов в час[об/ч]-my_split-572.9577951308</item>
+        <item>Оборотов в минуту[об/мин]-my_split-9.549296585514</item>
+        <item>Оборотов в секунду[об/с]-my_split-0.1591549430919</item>
         </string-array>
+
+    <string-array name="Title_moment_power">
+        <item>ньютон-метр[Н*м]-my_split-1.0</item>
+        <item>килоньютон-метр[кН*м]-my_split-0.001</item>
+        <item>миллиньютон-метр[мН*м]-my_split-1000.0</item>
+        <item>микроньютон-метр[мкН*м]-my_split-1000000.0</item>
+        <item>тонна-сила(короткая)-метр-my_split-0.0001124045123667</item>
+        <item>тонна-сила(длинная)-метр-my_split-0.000100361099235</item>
+        <item>тонна-сила(метрическая)-метр-my_split-0.0001019716212978</item>
+        <item>килограмм-сила-метр[кгс*м]-my_split-0.1019716212978</item>
+        <item>грамм-сила-сантиметр[гс*см]-my_split-10197.16212978</item>
+        <item>фунт-сила-фут-my_split-0.7375610331755</item>
+        <item>пундаль-фут-my_split-23.73036608836</item>
+        <item>пундаль-дюйм-my_split-284.7643930603</item>
+    </string-array>
+
 
     <string-array name="Title_area">
         <item>Квадратный метр[м<sup>2</sup>]-my_split-1.0</item>
-        <item>Квадратный километр[км<sup>2</sup>]</item>
-        <item>Квадратный гектометр[гм<sup>2</sup>]</item>
-        <item>Квадратный декаметр[дам<sup>2</sup>]</item>
-        <item>Квадратный дециметр[дм<sup>2</sup>]</item>
-        <item>Квадратный сантиметр[см<sup>2</sup>]</item>
-        <item>Квадратный миллиметр[мм<sup>2</sup>]</item>
-        <item>Квадратный нанометр[нм<sup>2</sup>]</item>
-        <item>гектар[га]</item>
-        <item>ар[а]</item>
-        <item>барн[бн]</item>
-        <item>квадратная миля[миля<sup>2</sup>]</item>
-        <item>кв. миля (США, геодез.)[миля<sup>2</sup>]</item>
-        <item>квадратный ярд[ярд<sup>2</sup>]</item>
-        <item>квадратный фут[фут<sup>2</sup>]</item>
-        <item>кв.фут(США,геодез.)[фут<sup>2</sup>]</item>
-        <item>квадратный дюйм[круговой дюйм]</item>
-        <item>тауншип</item>
-        <item>секция</item>
-        <item>акр[акр]</item>
-        <item>акр(США,геодез.)[акр]</item>
-        <item>руд</item>
-        <item>квадратный чейн[чейн<sup>2</sup>]</item>
-        <item>квадратный род[род<sup>2</sup>]</item>
-        <item>кв.тысячная[тысячная<sup>2</sup>]</item>
-        <item>круговой мил[круг.мил]</item>
-        <item>хомстед</item>
-        <item>сабин</item>
-        <item>арпан</item>
-        <item>куэрда</item>
-        <item>квадратный кастильский локоть</item>
-        <item>varas conugueras cuad</item>
-        <item>поперечное сечение электрона</item>
+        <item>Квадратный километр[км<sup>2</sup>]-my_split-0.000001</item>
+        <item>Квадратный гектометр[гм<sup>2</sup>]-my_split-0.0001</item>
+        <item>Квадратный декаметр[дам<sup>2</sup>]-my_split-0.01</item>
+        <item>Квадратный дециметр[дм<sup>2</sup>]-my_split-100.0</item>
+        <item>Квадратный сантиметр[см<sup>2</sup>]-my_split-10000.0</item>
+        <item>Квадратный миллиметр[мм<sup>2</sup>]-my_split-1000000.0</item>
+        <item>Квадратный нанометр[нм<sup>2</sup>]-my_split-1000000000000.0</item>
+        <item>гектар[га]-my_split-0.0001</item>
+        <item>ар[а]-my_split-0.01</item>
+        <item>барн[бн]-my_split-1e+28</item>
+        <item>квадратная миля[миля<sup>2</sup>]-my_split-3.861021585424e-7</item>
+        <item>кв. миля (США, геодез.)[миля<sup>2</sup>]-my_split-3.861006141354e-7</item>
+        <item>квадратный ярд[ярд<sup>2</sup>]-my_split-1.195990046301</item>
+        <item>квадратный фут[фут<sup>2</sup>]-my_split-10.76391041671</item>
+        <item>кв.фут(США,геодез.)[фут<sup>2</sup>]-my_split-10.76386736111</item>
+        <item>квадратный дюйм[круговой дюйм]-my_split-1550.003100006</item>
+        <item>тауншип-my_split-1.072505995951e-8</item>
+        <item>секция-my_split-3.861021585424e-7</item>
+        <item>акр[акр]-my_split-0.0002471053814672</item>
+        <item>акр(США,геодез.)[акр]-my_split-0.0002471043930466</item>
+        <item>руд-my_split-0.0009884215258687</item>
+        <item>квадратный чейн[чейн<sup>2</sup>]-my_split-0.002471053814672</item>
+        <item>квадратный род[род<sup>2</sup>]-my_split-0.03953670288746</item>
+        <item>кв.тысячная[тысячная<sup>2</sup>]-my_split-1550003100.006</item>
+        <item>круговой мил[круг.мил]-my_split-1973525241.39</item>
+        <item>хомстед-my_split-0.00000154440863417</item>
+        <item>сабин-my_split-10.76391041671</item>
+        <item>арпан-my_split-0.0002474462164761</item>
+        <item>куэрда-my_split-0.0002544273135354</item>
+        <item>квадратный кастильский локоть-my_split-1.431153638637</item>
+        <item>varas conugueras cuad-my_split-0.1590170709596</item>
+        <item>поперечное сечение электрона-my_split-1.503202964749e+28</item>
 
     </string-array>
 
 
-    <string-array name="coeffMoment">
-        <item>1.0</item>
-        <item>86400</item>
-        <item>3600</item>
-        <item>60</item>
-        <item>4950355.34993</item>
-        <item>206264.8062471</item>
-        <item>3437.746770785</item>
-        <item>57.29577951308</item>
-        <item>13750.98708314</item>
-        <item>572.9577951308</item>
-        <item>9.549296585514</item>
-        <item>0.1591549430919</item>
-    </string-array>
 
     <string-array name="views_array">
         <item>Площадь</item>
