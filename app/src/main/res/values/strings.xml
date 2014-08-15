@@ -8,6 +8,8 @@
     <string name="Enter_Unit">Введите данные</string>
     <string name="AngleSpeed">Угловая скорость</string>
     <string name="EnterVal">Введите значение</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
 
     <string-array name="AngleSpeed">
         <item>Радиан в секунду[рад/c]-my_split-1.0</item>
