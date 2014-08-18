@@ -15,10 +15,12 @@ public class ExpListAdapter extends BaseExpandableListAdapter {
 
     private ArrayList<ArrayList<String>> mGroups;
     private Context mContext;
+    private String[] arrGroup;
 
-    public ExpListAdapter(ArrayList<ArrayList<String>> mGroups, Context mContext) {
+    public ExpListAdapter(ArrayList<ArrayList<String>> mGroups, Context mContext,String[] arrGroup) {
         this.mGroups = mGroups;
         this.mContext = mContext;
+        this.arrGroup = arrGroup;
     }
 
     @Override
@@ -76,7 +78,8 @@ public class ExpListAdapter extends BaseExpandableListAdapter {
         }
 
         TextView textGroup = (TextView) convertView.findViewById(R.id.textGroup);
-        textGroup.setText("Group" + Integer.toString(groupPosition));
+
+        textGroup.setText(arrGroup[groupPosition]);
 
         return convertView;
     }
@@ -92,13 +95,6 @@ public class ExpListAdapter extends BaseExpandableListAdapter {
 
         TextView textChild = (TextView) convertView.findViewById(R.id.textChild);
         textChild.setText(mGroups.get(groupPosition).get(childPosition));
-        Button button = (Button) convertView.findViewById(R.id.buttonChild);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(mContext, "button is pressed", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         return convertView;
     }

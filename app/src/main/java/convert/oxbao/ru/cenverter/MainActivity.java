@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -34,12 +35,13 @@ public class MainActivity extends ActionBarActivity {
     public static ArrayAdapter<?> adapter;
     public static String[] coeff;
     public static String[] title_name;
+    private static  ArrayList<ArrayList<String>> groups;
 
     private class DrawerItemClickListner implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             //display view for selected nav drawer item
-            displayView(i);
+         //   displayView(i, 0);
         }
     }
 
@@ -52,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
         myDrawerTitle = getResources().getString(R.string.menu);
 
         //load slide menu items
-        viewsNames = getResources().getStringArray(R.array.views_array);
+       // viewsNames = getResources().getStringArray(R.array.);
         myDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         /*Drop shadow*/
         myDrawerLayout.setDrawerShadow(R.drawable.abc_search_dropdown_dark, GravityCompat.START);
@@ -60,20 +62,46 @@ public class MainActivity extends ActionBarActivity {
 
        /* myDrawerList = (ListView) findViewById(R.id.left_drawer);*/
         myDrawerList = (ExpandableListView) findViewById(R.id.exListView);
+        myDrawerList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView expandableListView, View view, int i, int i2, long l) {
+                Toast.makeText(getApplicationContext(), String.valueOf(i*1000 + i2)  , Toast.LENGTH_SHORT).show();
+                displayView(i, i2);
+                return false;
+            }
+        });
 
         //Создаем набор данных для адаптера
-        ArrayList<ArrayList<String>> groups = new ArrayList<ArrayList<String>>();
-        ArrayList<String> children1 = new ArrayList<String>();
-        ArrayList<String> children2 = new ArrayList<String>();
-        children1.add("Child_1");
-        children1.add("Child_2");
-        groups.add(children1);
-        children2.add("Child_1");
-        children2.add("Child_2");
-        children2.add("Child_3");
-        groups.add(children2);
+        groups = new ArrayList<ArrayList<String>>();
 
-        ExpListAdapter ExAdapter = new ExpListAdapter(groups, this);
+
+        String[] arrGroup = getResources().getStringArray(R.array.groups);
+        for (int i = 0; i < arrGroup.length; i++)
+        {
+            groups.add(new ArrayList<String>());
+
+            switch (i){
+                case 0:
+                    String[] length = getResources().getStringArray(R.array.popular);
+                    for (int j = 0; j < length.length; j++)
+                    {
+                        groups.get(i).add(length[j]);
+                    }
+                    break;
+                case 1:
+                    String[] mechanic = getResources().getStringArray(R.array.mechanic);
+                    for (int j = 0; j < mechanic.length; j++)
+                    {
+                        groups.get(i).add(mechanic[j]);
+                    }
+                    break;
+
+            }
+        }
+
+
+        ExpListAdapter ExAdapter = new ExpListAdapter(groups, this, arrGroup);
+
 
         myDrawerList.setAdapter(ExAdapter);
 
@@ -114,7 +142,7 @@ public class MainActivity extends ActionBarActivity {
         if (savedInstanceState == null) {
             // on first time display view for first nav item
             //
-            displayView(0);
+            displayView(0, 0);
             //
         }
         myDrawerList.setOnItemClickListener(new DrawerItemClickListner());
@@ -187,17 +215,21 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setTitle(myTitle);
     }
 
-    private void displayView(int position) {
+    private void displayView(int position, int i2) {
         // update the maon content by replacing fragments
         Fragment fragment = null;
-        switch (position) {
+       int  pos_calc = position * 1000 + i2;
+        switch (pos_calc) {
             case 0:
-                fragment = newForm(R.array.Title_area);
+                fragment = newForm(R.array.length);
                 break;
             case 1:
                 fragment = newForm(R.array.AngleSpeed);
                 break;
             case 2:
+                fragment = newForm(R.array.Title_moment_power);
+                break;
+            case 3:
                 fragment = newForm(R.array.Title_moment_power);
                 break;
             default:
@@ -208,9 +240,9 @@ public class MainActivity extends ActionBarActivity {
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             // update selected item and title? the close drawer
-//            myDrawerList.setItemChecked(position, true);
-            myDrawerList.setSelection(position);
-            setTitle(viewsNames[position]);
+         //   myDrawerList.setItemChecked(position, true);
+          //  myDrawerList.setSelection(position);
+            setTitle(groups.get(position).get(i2));
             myDrawerLayout.closeDrawer(myDrawerList);
         } else {
             // error in creating fragment
