@@ -33,24 +33,24 @@
     </string-array>
 
     <string-array name="popular">
-        <item>Длинна и расстояние</item>
-        <item>Масса</item>
-        <item>Объем сыпучих продуктов</item>
-        <item>Площадь</item>
-        <item>Объем в кулинарии</item>
-        <item>Температура</item>
-        <item>Давление</item>
-        <item>Энергия</item>
-        <item>Мощность</item>
-        <item>Сила</item>
-        <item>Время</item>
-        <item>Линейная скорость</item>
-        <item>Плоский угол</item>
-        <item>Тепло</item>
-        <item>Числа</item>
-        <item>Информация</item>
-        <item>Размеры женской одежды и обуви</item>
-        <item>Размеры мужской одежды и обуви</item>
+        <item>Длинна и расстояние-my_split-</item>
+        <item>Масса-my_split-</item>
+        <item>Объем сыпучих продуктов-my_split-</item>
+        <item>Площадь-my_split-</item>
+        <item>Объем в кулинарии-my_split-</item>
+        <item>Температура-my_split-</item>
+        <item>Давление-my_split-</item>
+        <item>Энергия-my_split-</item>
+        <item>Мощность-my_split-</item>
+        <item>Сила-my_split-</item>
+        <item>Время-my_split-</item>
+        <item>Линейная скорость-my_split-</item>
+        <item>Плоский угол-my_split-</item>
+        <item>Тепло-my_split-</item>
+        <item>Числа-my_split-</item>
+        <item>Информация-my_split-</item>
+        <item>Размеры женской одежды и обуви-my_split-</item>
+        <item>Размеры мужской одежды и обуви-my_split-</item>
     </string-array>
 
     <string-array name="mechanic">
@@ -147,8 +147,37 @@
         <item>полярный радиус Земли-my_split-1.573124242049e-7</item>
         <item>расстояние от Земли до Солнца-my_split-6.684491978609e-12</item>
         <item>радиус Солнца-my_split-1.436781609195e-9</item>
+    </string-array>
 
-
+    <string-array name="mass">
+        <item>килограмм[кг]</item>
+        <item>грамм[г]</item>
+        <item>эксаграмм[Эг]</item>
+        <item>петаграмм[Пг]</item>
+        <item>тераграмм[Тг]</item>
+        <item>мегаграмм[Мг]</item>
+        <item>гектограмм[гг]</item>
+        <item>декаграмм[даг]</item>
+        <item>дециграмм[дг]</item>
+        <item>сантиграмм[сг]</item>
+        <item>миллиграмм[мг]</item>
+        <item>микрограмм[мкг]</item>
+        <item>нанограмм[нг]</item>
+        <item>пикограмм[пг]</item>
+        <item>фемтограмм[фг]</item>
+        <item>аттограмм[аг]</item>
+        <item>дальтон,атомная единица массы</item>
+        <item>килограмм-сила кв.сек/метр[кгс*с<sup>2</sup>/м]</item>
+        <item>килофунт</item>
+        <item>слаг</item>
+        <item>фунт-сила кв.сек./фут[фунт-сила*с<sup>2</sup>/фут]</item>
+        <item>фунт</item>
+        <item>тройский фунт</item>
+        <item>унция</item>
+        <item>тройская унция</item>
+        <item>короткая тонна</item>
+        <item>Длинная английская тонна</item>
+        <item>пробирная тонна</item>
 
     </string-array>
 
