@@ -8,6 +8,149 @@
     <string name="Enter_Unit">Введите данные</string>
     <string name="AngleSpeed">Угловая скорость</string>
     <string name="EnterVal">Введите значение</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+
+    <string-array name="groups">
+        <item>Популярные</item>
+        <item>Механика</item>
+        <item>Термодинамика</item>
+        <item>Гидравлика</item>
+        <item>Акустика</item>
+        <item>Фотометрия</item>
+        <item>Электротехника</item>
+        <item>Магнетизм</item>
+        <item>Радиация</item>
+        <item>Другие</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Кельвин[K]-my_split-1.0</item>
+        <item>градус Цельсия[°С]-my_split--272.15</item>
+        <item>градус Фаренгейта[°F]-my_split--457.87</item>
+        <item>градус Ранкина[°Ra]-my_split-1.8</item>
+        <item>градус Реомюра[°R]-my_split--217.72</item>
+    </string-array>
+
+    <string-array name="popular">
+        <item>Длинна и расстояние</item>
+        <item>Масса</item>
+        <item>Объем сыпучих продуктов</item>
+        <item>Площадь</item>
+        <item>Объем в кулинарии</item>
+        <item>Температура</item>
+        <item>Давление</item>
+        <item>Энергия</item>
+        <item>Мощность</item>
+        <item>Сила</item>
+        <item>Время</item>
+        <item>Линейная скорость</item>
+        <item>Плоский угол</item>
+        <item>Тепло</item>
+        <item>Числа</item>
+        <item>Информация</item>
+        <item>Размеры женской одежды и обуви</item>
+        <item>Размеры мужской одежды и обуви</item>
+    </string-array>
+
+    <string-array name="mechanic">
+        <item>Угловая скорость</item>
+        <item>Ускорение</item>
+        <item>Угловое ускорение</item>
+        <item>Плотность</item>
+        <item>Удельный объем</item>
+        <item>Момент инерции</item>
+        <item>Мосент силы</item>
+        <item>Вращающий момент</item>
+    </string-array>
+    
+    <string-array name="length">
+        <item>метр[м]-my_split-1.0</item>
+        <item>эксаметр[Эм]-my_split-1e-18</item>
+        <item>петаметр[Пм]-my_split-1e-15</item>
+        <item>тераметр[Тм]-my_split-1e-12</item>
+        <item>гигаметр[Гм]-my_split-1e-9</item>
+        <item>мегаметр[Мм]-my_split-0.000001</item>
+        <item>километр[км]-my_split-0.001</item>
+        <item>гектометр[гм]-my_split-0.01</item>
+        <item>декаметр[дам]-my_split-0.1</item>
+        <item>дециметр[дм]-my_split-10</item>
+        <item>сантиметр[см]-my_split-100</item>
+        <item>милиметр[мм]-my_split-1000</item>
+        <item>микрометр[мкм]-my_split-1000000</item>
+        <item>микрон[мкм]-my_split-1000000</item>
+        <item>нанометр[нм]-my_split-1000000000</item>
+        <item>пикометр[пм]-my_split-1000000000000</item>
+        <item>фемтометр[фм]-my_split-1e+15</item>
+        <item>аттометр[ам]-my_split-1e+18</item>
+        <item>мегапарсек[Мпк]-my_split-3.240779289666e-23</item>
+        <item>килопарсек[кпк]-my_split-3.240779289666e-20</item>
+        <item>парсек[пк]-my_split-3.240779289666e-17</item>
+        <item>световой год[св.г]-my_split-1.057000834025e-16</item>
+        <item>астронамическая единица[а.е.]-my_split-6.684587122671e-12</item>
+        <item>лига-my_split-0.0002071237307458</item>
+        <item>морская лига(брит.)-my_split-0.0001798706082792</item>
+        <item>морская лига(международная)-my_split-0.0001799856011519</item>
+        <item>лига(статутная)-my_split-0.0002071233164983</item>
+        <item>миля-my_split-0.0006213711922373</item>
+        <item>морская миля(брит.)-my_split-0.0005396118248376</item>
+        <item>морская миля(международная)-my_split-0.0005399568034556</item>
+        <item>миля(статутная)-my_split-0.0006213699494948</item>
+        <item>миля(США,геодезическая)-my_split-0.0006213699494948</item>
+        <item>метр(римская)-my_split-0.0006757651689006</item>
+        <item>1000ярдов-my_split-0.001093613298337</item>
+        <item>фарлонг-my_split-0.004970969537896</item>
+        <item>фарлонг(США,геодезический)-my_split-0.004970959595957</item>
+        <item>чейн-my_split-0.04970969537899</item>
+        <item>чейн(США,геодезический)-my_split-0.0497095959596</item>
+        <item>горе(англ.горе)-my_split-0.1640419947507</item>
+        <item>род-my_split-0.1988387815159</item>
+        <item>род(США геодезический)-my_split-0.1988383838384</item>
+        <item>перч-my_split-0.1988387815159</item>
+        <item>поль(англ.pole)-my_split-0.1988387815159</item>
+        <item>морская сажень-my_split-0.5468066491689</item>
+        <item>сажень(США,геодезицеская)-my_split-0.5468055555556</item>
+        <item>локоть-my_split-0.8748906386702</item>
+        <item>ярд-my_split-1.093613298338</item>
+        <item>фут-my_split-3.280839895013</item>
+        <item>фут(США,геодезический)-my_split-3.280833333333</item>
+        <item>линк-my_split-4.970969537899</item>
+        <item>линк(США,геодезический)-my_split-4.97095959596</item>
+        <item>локоть(брит.)-my_split-2.187226596675</item>
+        <item>хенд-my_split-9.842519685039</item>
+        <item>пядь-my_split-4.374453193351</item>
+        <item>фингер-my_split-8.748906386702</item>
+        <item>нейль-my_split-17.4978127734</item>
+        <item>дюйм-my_split-39.37007874016</item>
+        <item>дюйм(США,геодезический)-my_split-39.37</item>
+        <item>ячменное зерно(англ.barleycorn)-my_split-118.1102362205</item>
+        <item>тысячная-my_split-39370.07874016</item>
+        <item>микродюйм-my_split-39370078.74016</item>
+        <item>ангстрем[Å]-my_split-10000000000</item>
+        <item>атомная единица длины[а0]-my_split-18897259885.79</item>
+        <item>икс-единица[X]-my_split-9.979243174198e+12</item>
+        <item>ферми[фм]-my_split-1e+15</item>
+        <item>арпан-my_split-0.01708770778653</item>
+        <item>цицеро-my_split-236.2204724409</item>
+        <item>типографский пункт-my_split-2834.645669291</item>
+        <item>твип-my_split-56692.91338583</item>
+        <item>локоть(швейдский)-my_split-1.684131736527</item>
+        <item>морская сажень(шведская)-my_split-0.561377245509</item>
+        <item>калибр-my_split-3937.007874016</item>
+        <item>сантидюйм-my_split-3937.007874016</item>
+        <item>кен-my_split-0.4720632942465</item>
+        <item>аршин-my_split-1.40607424072</item>
+        <item>планковская длинна-my_split-6.187927353733e+34</item>
+        <item>класический радиус электрона-my_split-3.548690438833e+14</item>
+        <item>боровский радиус-my_split-18897259885.79</item>
+        <item>экваторивальный радиус Земли-my_split-1.567850289112e-7</item>
+        <item>полярный радиус Земли-my_split-1.573124242049e-7</item>
+        <item>расстояние от Земли до Солнца-my_split-6.684491978609e-12</item>
+        <item>радиус Солнца-my_split-1.436781609195e-9</item>
+
+
+
+    </string-array>
 
     <string-array name="AngleSpeed">
         <item>Радиан в секунду[рад/c]-my_split-1.0</item>

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="navigation_color">#FFBDE0A1</color>
+    <color name="mBlack">#FF000000</color>
+    <color name="mWhite">#FFFFFFFF</color>
+    <color name="mNoColor">#00000000</color>
 </resources>

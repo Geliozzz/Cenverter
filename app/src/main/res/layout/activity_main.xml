@@ -2,7 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/mNoColor">
 
     <!-- The main content view -->
     <FrameLayout
@@ -11,7 +12,7 @@
         android:layout_height="match_parent" />
 
     <!-- The navigation drawer -->
-    <ListView android:id="@+id/left_drawer"
+  <!--  <ListView android:id="@+id/left_drawer"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -21,6 +22,25 @@
         android:listSelector="@android:drawable/list_selector_background"
         android:background="@color/navigation_color"
         android:drawSelectorOnTop="false"
-        android:scrollingCache="false" />
+        android:scrollingCache="false" />-->
+
+    <ExpandableListView
+        android:id="@+id/exListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indicatorLeft="100dp"
+        android:indicatorRight="100dp"
+        android:layout_gravity="start"
+        android:choiceMode="multipleChoice"
+        android:divider="@android:color/holo_orange_dark"
+        android:dividerHeight="2dp"
+        android:listSelector="@android:drawable/list_selector_background"
+        android:background="@color/mNoColor"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="false"
+
+        />
+
+
 
 </android.support.v4.widget.DrawerLayout>
