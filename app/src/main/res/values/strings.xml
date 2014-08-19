@@ -33,24 +33,24 @@
     </string-array>
 
     <string-array name="popular">
-        <item>Длинна и расстояние-my_split-</item>
-        <item>Масса-my_split-</item>
-        <item>Объем сыпучих продуктов-my_split-</item>
-        <item>Площадь-my_split-</item>
-        <item>Объем в кулинарии-my_split-</item>
-        <item>Температура-my_split-</item>
-        <item>Давление-my_split-</item>
-        <item>Энергия-my_split-</item>
-        <item>Мощность-my_split-</item>
-        <item>Сила-my_split-</item>
-        <item>Время-my_split-</item>
-        <item>Линейная скорость-my_split-</item>
-        <item>Плоский угол-my_split-</item>
-        <item>Тепло-my_split-</item>
-        <item>Числа-my_split-</item>
-        <item>Информация-my_split-</item>
-        <item>Размеры женской одежды и обуви-my_split-</item>
-        <item>Размеры мужской одежды и обуви-my_split-</item>
+        <item>Длинна и расстояние</item>
+        <item>Масса</item>
+        <item>Объем сыпучих продуктов</item>
+        <item>Площадь</item>
+        <item>Объем в кулинарии</item>
+        <item>Температура</item>
+        <item>Давление</item>
+        <item>Энергия</item>
+        <item>Мощность</item>
+        <item>Сила</item>
+        <item>Время</item>
+        <item>Линейная скорость</item>
+        <item>Плоский угол</item>
+        <item>Тепло</item>
+        <item>Числа</item>
+        <item>Информация</item>
+        <item>Размеры женской одежды и обуви</item>
+        <item>Размеры мужской одежды и обуви</item>
     </string-array>
 
     <string-array name="mechanic">
@@ -150,34 +150,168 @@
     </string-array>
 
     <string-array name="mass">
-        <item>килограмм[кг]</item>
-        <item>грамм[г]</item>
-        <item>эксаграмм[Эг]</item>
-        <item>петаграмм[Пг]</item>
-        <item>тераграмм[Тг]</item>
-        <item>мегаграмм[Мг]</item>
-        <item>гектограмм[гг]</item>
-        <item>декаграмм[даг]</item>
-        <item>дециграмм[дг]</item>
-        <item>сантиграмм[сг]</item>
-        <item>миллиграмм[мг]</item>
-        <item>микрограмм[мкг]</item>
-        <item>нанограмм[нг]</item>
-        <item>пикограмм[пг]</item>
-        <item>фемтограмм[фг]</item>
-        <item>аттограмм[аг]</item>
-        <item>дальтон,атомная единица массы</item>
-        <item>килограмм-сила кв.сек/метр[кгс*с<sup>2</sup>/м]</item>
-        <item>килофунт</item>
-        <item>слаг</item>
-        <item>фунт-сила кв.сек./фут[фунт-сила*с<sup>2</sup>/фут]</item>
-        <item>фунт</item>
-        <item>тройский фунт</item>
-        <item>унция</item>
-        <item>тройская унция</item>
-        <item>короткая тонна</item>
-        <item>Длинная английская тонна</item>
-        <item>пробирная тонна</item>
+        <item>килограмм[кг]-my_split-</item>
+        <item>грамм[г]-my_split-</item>
+        <item>эксаграмм[Эг]-my_split-</item>
+        <item>петаграмм[Пг]-my_split-</item>
+        <item>тераграмм[Тг]-my_split-</item>
+        <item>мегаграмм[Мг]-my_split-</item>
+        <item>гектограмм[гг]-my_split-</item>
+        <item>декаграмм[даг]-my_split-</item>
+        <item>дециграмм[дг]-my_split-</item>
+        <item>сантиграмм[сг]-my_split-</item>
+        <item>миллиграмм[мг]-my_split-</item>
+        <item>микрограмм[мкг]-my_split-</item>
+        <item>нанограмм[нг]-my_split-</item>
+        <item>пикограмм[пг]-my_split-</item>
+        <item>фемтограмм[фг]-my_split-</item>
+        <item>аттограмм[аг]-my_split-</item>
+        <item>дальтон,атомная единица массы-my_split-</item>
+        <item>килограмм-сила кв.сек/метр[кгс*с<sup>2</sup>/м]-my_split-</item>
+        <item>килофунт-my_split-</item>
+        <item>слаг-my_split-</item>
+        <item>фунт-сила кв.сек./фут[фунт-сила*с<sup>2</sup>/фут]-my_split-</item>
+        <item>фунт-my_split-</item>
+        <item>тройский фунт-my_split-</item>
+        <item>унция-my_split-</item>
+        <item>тройская унция-my_split-</item>
+        <item>короткая тонна-my_split-</item>
+        <item>Длинная английская тонна-my_split-</item>
+        <item>пробирная тонна-my_split-</item>
+        <item>тонна(метрическая)[т]-my_split-</item>
+        <item>килотонна(метрическая)[кт]-my_split-</item>
+        <item>центнер американский-my_split-</item>
+        <item>центнер британский-my_split-</item>
+        <item>квартер(американский)-my_split-</item>
+        <item>стоун (американский)-my_split-</item>
+        <item>стоун (брит.)-my_split-</item>
+        <item>тонна[т]-my_split-</item>
+        <item>пеннивейт-my_split-</item>
+        <item>скрупул-my_split-</item>
+        <item>карат[кар]-my_split-</item>
+        <item>гран-my_split-</item>
+        <item>гамма</item>
+        <item>талант (Др. Израиль)-my_split-</item>
+        <item>мина (Др. Израиль)-my_split-</item>
+        <item>шекель (Др. Израиль)-my_split-</item>
+        <item>бекан (Др. Израиль)-my_split-</item>
+        <item>гера (Др. Израиль)-my_split-</item>
+        <item>талант (Др. Греция)-my_split-</item>
+        <item> мина (Др. Греция)-my_split-</item>
+        <item>тетрадрахма (Др. Греция)-my_split-</item>
+        <item>дидрахма (Др. Греция)-my_split-</item>
+        <item>драхма (Др. Греция)-my_split-</item>
+        <item>денарий (Др. Рим)-my_split-</item>
+        <item>асс (Др. Рим)-my_split-</item>
+        <item>кодрант (Др. Рим)-my_split-</item>
+        <item>лептон (Др. Рим)-my_split-</item>
+        <item>планковская масса-my_split-</item>
+        <item>атомная единица массы [а.е.м.]-my_split-</item>
+        <item>масса покоя электрона-my_split-</item>
+        <item>масса покоя мюона-my_split-</item>
+        <item>масса протона-my_split-</item>
+        <item>масса нейтрона-my_split-</item>
+        <item>масса дейтрона-my_split-</item>
+        <item>масса Земли-my_split-</item>
+        <item>масса Солнца-my_split-</item>
+
+    </string-array>
+
+    <string-array name="volume_stew">
+        <item>литр[л]-my_split-</item>
+        <item>баррель сухой США-my_split-</item>
+        <item>пинта сухая США-my_split-</item>
+        <item>кварта сухая США-my_split-</item>
+        <item>пек американский-my_split-</item>
+        <item>пек британский-my_split-</item>
+        <item>бушель американский-my_split-</item>
+        <item>бушель британский-my_split-</item>
+        <item>кор (библейская единица)-my_split-</item>
+        <item>хомер (библейская единица)-my_split-</item>
+        <item>ефа (библейская единица)-my_split-</item>
+        <item>сата (библейская единица)-my_split-</item>
+        <item>гомор (библейская единица)-my_split-</item>
+        <item>каб (библейская единица)-my_split-</item>
+        <item>лог (библейская единица)-my_split-</item>
+    </string-array>
+
+    <string-array name="volume_cook">
+        <item>кубический метр[]-my_split-</item>
+        <item>кубический километр-my_split-</item>
+        <item>кубический дециметр-my_split-</item>
+        <item>кубический сантиметр-my_split-</item>
+        <item>кубический миллиметр-my_split-</item>
+        <item>литр-my_split-</item>
+        <item>эксалитр-my_split-</item>
+        <item>петалитр-my_split-</item>
+        <item>тералитр-my_split-</item>
+        <item>гигалитр-my_split-</item>
+        <item>мегалитр-my_split-</item>
+        <item>килолитр-my_split-</item>
+        <item>гектолитр-my_split-</item>
+        <item>декалитр-my_split-</item>
+        <item>децилитр-my_split-</item>
+        <item>сантилитр-my_split-</item>
+        <item>миллилитр-my_split-</item>
+        <item>микролитр-my_split-</item>
+        <item>нанолитр-my_split-</item>
+        <item>пиколитр-my_split-</item>
+        <item>фемтолитр-my_split-</item>
+        <item>аттолитр-my_split-</item>
+        <item>куб.см-my_split-</item>
+        <item>капля-my_split-</item>
+        <item>баррель (нефтяной)-my_split-</item>
+        <item>баррель американский-my_split-</item>
+        <item>баррель британский-my_split-</item>
+        <item>галлон американский-my_split-</item>
+        <item>галлон британский-my_split-</item>
+        <item>кварта США-my_split-</item>
+        <item>кварта британская-my_split-</item>
+        <item>пинта США-my_split-</item>
+        <item>пинта британская-my_split-</item>
+        <item>стакан американский-my_split-</item>
+        <item>стакан (метрический)-my_split-</item>
+        <item>стакан британский-my_split-</item>
+        <item>унция жидкая США-my_split-</item>
+        <item>унция жидкая британская-my_split-</item>
+        <item>столовая ложка амер.-my_split-</item>
+        <item>столовая ложка (метр.)-my_split-</item>
+        <item>столовая ложка брит.-my_split-</item>
+        <item>десертная ложка амер-my_split-</item>
+        <item>десертная ложка брит.-my_split-</item>
+        <item>чайная ложка амер.-my_split-</item>
+        <item>чайная ложка метрич.-my_split-</item>
+        <item>чайная ложка брит. -my_split-</item>
+        <item>джилл, гилл американский-my_split-</item>
+        <item>джилл, гилл британский-my_split-</item>
+        <item>миним американский-my_split-</item>
+        <item>миним британский-my_split-</item>
+        <item>кубическая миля-my_split-</item>
+        <item>кубический ярд-my_split-</item>
+        <item>кубический фут-my_split-</item>
+        <item>кубический дюйм-my_split-</item>
+        <item>регистровая тонна-my_split-</item>
+        <item>100 кубических футов-my_split-</item>
+        <item>100-футовый куб-my_split-</item>
+        <item>акр-фут-my_split-</item>
+        <item>акр-фут (США, геодезический)-my_split-</item>
+        <item>акр-дюйм-my_split-</item>
+        <item>декастер-my_split-</item>
+        <item>стер-my_split-</item>
+        <item>децистер-my_split-</item>
+        <item>корд-my_split-</item>
+        <item>тан-my_split-</item>
+        <item>хогсхед-my_split-</item>
+        <item>досковый фут-my_split-</item>
+        <item>драхма-my_split-</item>
+        <item>кор (библейская единица)-my_split-</item>
+        <item>хомер (библейская единица)-my_split-</item>
+        <item>бат (библейская единица)-my_split-</item>
+        <item>гин (библейская единица)-my_split-</item>
+        <item>каб (библейская единица)-my_split-</item>
+        <item>лог (библейская единица)-my_split-</item>
+        <item>стакан (испанский)-my_split-</item>
+        <item>объем Земли-my_split-</item>
 
     </string-array>
 

@@ -11,19 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- The navigation drawer -->
-  <!--  <ListView android:id="@+id/left_drawer"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:choiceMode="multipleChoice"
-        android:divider="@android:color/holo_orange_dark"
-        android:dividerHeight="2dp"
-        android:listSelector="@android:drawable/list_selector_background"
-        android:background="@color/navigation_color"
-        android:drawSelectorOnTop="false"
-        android:scrollingCache="false" />-->
-
     <ExpandableListView
         android:id="@+id/exListView"
         android:layout_width="match_parent"
@@ -32,7 +19,7 @@
         android:indicatorRight="100dp"
         android:layout_gravity="start"
         android:choiceMode="multipleChoice"
-        android:divider="@android:color/holo_orange_dark"
+        android:divider="@android:color/darker_gray"
         android:dividerHeight="2dp"
         android:listSelector="@android:drawable/list_selector_background"
         android:background="@color/mNoColor"

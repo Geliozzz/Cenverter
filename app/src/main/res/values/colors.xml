@@ -4,4 +4,5 @@
     <color name="mBlack">#FF000000</color>
     <color name="mWhite">#FFFFFFFF</color>
     <color name="mNoColor">#00000000</color>
+    <color name="background_comlay">#fff9ffe5</color>
 </resources>
