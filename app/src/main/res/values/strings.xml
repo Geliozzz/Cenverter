@@ -44,7 +44,6 @@
         <item>Информация</item>
     </string-array>
 
-
 <!--Popular-->
     <string-array name="length">
         <item>метр[м]-my_split-1.0</item>
@@ -751,15 +750,6 @@
 
     </string-array>
  <!--endPopular-->
-    
-        
-
-    
-
-
-
-
-
 
 
     <string-array name="mechanic">
