@@ -39,11 +39,9 @@
         <item>Время</item>
         <item>Линейная скорость</item>
         <item>Плоский угол</item>
-        <item>Тепло</item>
+        <item>Тепловая эффективность</item>
         <item>Числа</item>
         <item>Информация</item>
-        <item>Размеры женской одежды и обуви</item>
-        <item>Размеры мужской одежды и обуви</item>
     </string-array>
 
 
@@ -452,44 +450,304 @@
         <item>микроватт-my_split-1000000</item>
         <item>нановатт-my_split-1000000000</item>
         <item>пиковатт-my_split-1000000000000</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
-        <item>-my_split-</item>
+        <item>фемтоватт-my_split-1e+15</item>
+        <item>аттоватт-my_split-1e+18</item>
+        <item>лошадиная сила брит.-my_split-0.001341022089595</item>
+        <item>метрическая лошадиная сила-my_split-0.001359621617304</item>
+        <item>котловая лошадиная сила-my_split-0.0001019419950048</item>
+        <item>электрическая лошадиная сила-my_split-0.001340482573727</item>
+        <item>насосная лошадиная сила-my_split-0.001340405311758</item>
+        <item>лошадиная сила (немецкая)-my_split-0.001359621617304</item>
+        <item>брит. термическая единица (межд.) в час-my_split-3.412141633128</item>
+        <item>брит. термическая единица (межд.) в минуту-my_split-0.0568690272188</item>
+        <item>брит. термическая единица (межд.) в секунду-my_split-0.0009478171203133</item>
+        <item>брит. термическая единица (термохим.) в час-my_split-3.41442594972</item>
+        <item>брит. термическая единица (термохим.) в минуту-my_split-0.056907099162</item>
+        <item>брит. термическая единица (термохим.) в секунду-my_split-0.0009484516527</item>
+        <item>МBTU (международная) в час-my_split-0.003412141633128</item>
+        <item>Тысяча BTU в час-my_split-0.003412141633128</item>
+        <item>МMBTU (международная) в час-my_split-0.000003412141633128</item>
+        <item>Миллион BTU в час-my_split-0.000003412141633128</item>
+        <item>тонна охлаждения-my_split-0.000284345136094</item>
+        <item>килокалория (межд.) в час-my_split-0.859845227859</item>
+        <item>килокалория (межд.) в минуту-my_split-0.01433075379765</item>
+        <item>килокалория (межд.) в секунду-my_split-0.0002388458966275</item>
+        <item>килокалория (терм.) в час-my_split-0.8604206500956</item>
+        <item>килокалория (терм.) в минуту-my_split-0.01434034416826</item>
+        <item>килокалория (терм.) в секунду-my_split-0.0002390057361377</item>
+        <item>калория (межд.) в час-my_split-859.845227859</item>
+        <item>калория (межд.) в минуту-my_split-14.33075379765</item>
+        <item>калория (межд.) в секунду-my_split-0.2388458966275</item>
+        <item>калория (терм.) в час-my_split-860.4206500956</item>
+        <item>калория (терм.) в минуту-my_split-14.34034416826</item>
+        <item>калория (терм.) в секунду-my_split-0.2390057361377</item>
+        <item>фут фунт-сила в час-my_split-2655.223737402</item>
+        <item>фут·фунт-сила/минуту-my_split-44.2537289567</item>
+        <item>фут·фунт-сила/секунду-my_split-0.7375621492783</item>
+        <item>фунт-фут в час-my_split-2655.223737402</item>
+        <item>фунт-фут в минуту-my_split-44.2537289567</item>
+        <item>фунт-фут в секунду-my_split-0.7375621492783</item>
+        <item>эрг в секунду-my_split-10000000</item>
+        <item>киловольт-ампер-my_split-0.001</item>
+        <item>вольт-ампер[В*А]-my_split-</item>
+        <item>джоуль в секунду-my_split-1.0</item>
+        <item>эксаджоуль в секунду-my_split-1e-18</item>
+        <item>петаджоуль в секунду-my_split-1e-15</item>
+        <item>тераджоуль в секунду-my_split-1e-12</item>
+        <item>гигаджоуль в секунду-my_split-1e-9</item>
+        <item>мегаджоуль в секунду-my_split-0.000001</item>
+        <item>килоджоуль в секунду-my_split-0.001</item>
+        <item>гектоджоуль в секунду-my_split-0.01</item>
+        <item>декаджоуль в секунду-my_split-0.1</item>
+        <item>дециджоуль в секунду-my_split-10</item>
+        <item>сантиджоуль в секунду-my_split-100</item>
+        <item>миллиджоуль в секунду-my_split-1000</item>
+        <item>микроджоуль в секунду-my_split-1000000</item>
+        <item>наноджоуль в секунду-my_split-1000000000</item>
+        <item>пикоджоуль в секунду-my_split-1000000000000</item>
+        <item>фемтоджоуль в секунду-my_split-1e+15</item>
+        <item>аттоджоуль в секунду-my_split-1e+18</item>
+        <item>джоуль в час-my_split-3600</item>
+        <item>джоуль в минуту-my_split-60</item>
+        <item>килоджоуль в час-my_split-3.6</item>
+        <item>килоджоуль в минуту-my_split-0.06</item>
     </string-array>
     <string-array name="force">
-
+        <item>ньютон-my_split-1.0</item>
+        <item>эксаньютон-my_split-1e-18</item>
+        <item>петаньютон-my_split-1e-15</item>
+        <item>тераньютон-my_split-1e-12</item>
+        <item>гиганьютон-my_split-1e-9</item>
+        <item>меганьютон-my_split-0.000001</item>
+        <item>килоньютон-my_split-0.001</item>
+        <item>гектоньютон-my_split-0.01</item>
+        <item>деканьютон-my_split-0.1</item>
+        <item>дециньютон-my_split-10</item>
+        <item>сантиньютон-my_split-100</item>
+        <item>миллиньютон-my_split-1000</item>
+        <item>микроньютон-my_split-1000000</item>
+        <item>наноньютон-my_split-1000000000</item>
+        <item>пиконьютон-my_split-1000000000000</item>
+        <item>фемтоньютон-my_split-1e+15</item>
+        <item>аттоньютон-my_split-1e+18</item>
+        <item>дина-my_split-100000</item>
+        <item>джоуль на метр-my_split-1.0</item>
+        <item>джоуль на сантиметр-my_split-100</item>
+        <item>грамм-сила[гс]-my_split-101.9716212978</item>
+        <item>килограмм-сила[кгс]-my_split-0.1019716212978</item>
+        <item>тонна-сила (короткая)-my_split-0.0001124044715499</item>
+        <item>тонна-сила (дл.)-my_split-0.0001003611353125</item>
+        <item>тонна-сила (метрическая)-my_split-0.0001019716212978</item>
+        <item>килофунт-сила-my_split-0.0002248089431</item>
+        <item>килофунт-сила-my_split-0.0002248089431</item>
+        <item>фунт-сила-my_split-0.2248089431</item>
+        <item>унция-сила-my_split-3.5969430896</item>
+        <item>паундаль-my_split-7.23301385121</item>
+        <item>фунт-фут в сек<sup>2</sup>-my_split-7.23301385121</item>
+        <item>грамм-сила-my_split-101.9716212978</item>
+        <item>килограмм-сила-my_split-0.1019716212978</item>
     </string-array>
     <string-array name="time">
-        
+        <item>год-my_split-1.0</item>
+        <item>секунда-my_split-31536000</item>
+        <item>миллисекунда-my_split-31536000000</item>
+        <item>микросекунда-my_split-3.1536e+13</item>
+        <item>наносекунда-my_split-3.1536e+16</item>
+        <item>пикосекунда-my_split-3.1536e+19</item>
+        <item>фемтосекунда-my_split-3.1536e+22</item>
+        <item>аттосекунда-my_split-3.1536e+25</item>
+        <item>10 наносекунд-my_split-3.1536e+15</item>
+        <item>минута-my_split-525600</item>
+        <item>час-my_split-8760</item>
+        <item>день-my_split-365</item>
+        <item>месяц-my_split-12</item>
+        <item>синодический месяц-my_split-12.36006041191</item>
+        <item>юлианский год-my_split-0.9993155373032</item>
+        <item>високосный год-my_split-0.9972677595628</item>
+        <item>тропический год-my_split-0.9993367542407</item>
+        <item>сидерический год-my_split-0.9992981356536</item>
+        <item>сидерический день-my_split-365.9993391679</item>
+        <item>сидерический час-my_split-8783.984140029</item>
+        <item>сидерическая минута-my_split-527039.0484017</item>
+        <item>сидерическая секунда-my_split-31622342.9041</item>
+        <item>фортнайт (14 суток)-my_split-26.07142857143</item>
+        <item>десятилетие-my_split-0.1</item>
+        <item>столетие-my_split-0.01</item>
+        <item>планковское время-my_split-5.850227063608e+50</item>
     </string-array>
     <string-array name="speed">
-        
+        <item>метр в секунду-my_split-1.0</item>
+        <item>метр в час-my_split-3600</item>
+        <item>метр в минуту-my_split-60</item>
+        <item>километр в час-my_split-3.6</item>
+        <item>километр в минуту-my_split-0.06</item>
+        <item>километр в секунду-my_split-0.001</item>
+        <item>сантиметр в час-my_split-360000</item>
+        <item>сантиметр в минуту-my_split-6000</item>
+        <item>сантиметр в секунду-my_split-100</item>
+        <item>миллиметр в час-my_split-3600000</item>
+        <item>миллиметр в минуту-my_split-60000</item>
+        <item>миллиметр в секунду-my_split-1000</item>
+        <item>фут в час-my_split-11811.02362205</item>
+        <item>фут в минуту-my_split-196.8503937008</item>
+        <item>фут в секунду-my_split-3.280839895013</item>
+        <item>ярд в час-my_split-3937.007874016</item>
+        <item>ярд в минуту-my_split-65.61679790026</item>
+        <item>ярд в секунду-my_split-1.093613298338</item>
+        <item>миля в час-my_split-2.236936292054</item>
+        <item>миля в минуту-my_split-0.03728227153424</item>
+        <item>миля в секунду-my_split-0.0006213711922373</item>
+        <item>узел-my_split-1.943844492441</item>
+        <item>узел (брит.)-my_split-1.942602569416</item>
+        <item>скорость света в вакууме-my_split-3.335640951982e-9</item>
+        <item>первая космическая скорость-my_split-0.000126582278481</item>
+        <item>вторая космическая скорость-my_split-0.00008928571428571</item>
+        <item>третья космическая скорость-my_split-0.00005998800239952</item>
+        <item>скорость вращения Земли-my_split-0.00003359650596338</item>
+        <item>скорость звука в пресной воде-my_split-0.0006744452687665</item>
+        <item>скорость звука в морской воде (20°C, глубина 10 метров)-my_split-0.0006572029442692</item>
+        <item>число Маха (20°C, 1 атм)-my_split-0.00291036088475</item>
+        <item>число Маха (стандарт СИ)-my_split-0.0033892974122</item>
     </string-array>
     <string-array name="angle">
-
+        <item>оборот-my_split-1.0</item>
+        <item>градус-my_split-360</item>
+        <item>радиан-my_split-6.28318530718</item>
+        <item>град-my_split-400</item>
+        <item>гон-my_split-400</item>
+        <item>минута-my_split-21600</item>
+        <item>секунда-my_split-1296000</item>
+        <item>зодиакальный сектор-my_split-12</item>
+        <item>тысячная-my_split-6400</item>
+        <item>окружность-my_split-1.0</item>
+        <item>квадрант-my_split-4</item>
+        <item>прямой угол-my_split-4</item>
+        <item>секстант-my_split-6.0</item>
     </string-array>
     <string-array name="heat">
-        
+        <item>эксаметр на литр-my_split-1.0</item>
+        <item>метр на литр-my_split-1e+18</item>
+        <item>петаметр на литр-my_split-1000</item>
+        <item>тераметр на литр-my_split-1000000</item>
+        <item>гигаметр на литр-my_split-1000000000</item>
+        <item>мегаметр на литр-my_split-эксаметр на литр</item>
+        <item>километр на литр-my_split-1e+15</item>
+        <item>гектометр на литр-my_split-1e+16</item>
+        <item>декаметр на литр-my_split-1e+17</item>
+        <item>сантиметр на литр-my_split-1e+20</item>
+        <item>миля (США) на литр-my_split-6.213711922373e+14</item>
+        <item>морская миля на литр-my_split-5.395940750326e+14</item>
+        <item>морская миля на галлон-my_split-2.042585769811e+15</item>
+        <item>км на галлон США-my_split-3.7854117834e+15</item>
+        <item>метр на гал. США-my_split-3.7854117834e+18</item>
+        <item>метр на брит. галлон-my_split-4.546099293921e+18</item>
+        <item>миля на галлон США-my_split-2.352145832948e+15</item>
+        <item>миля на брит. галлон-my_split-2.824809362797e+15</item>
+        <item>метр на кубический метр-my_split-1e+21</item>
+        <item>метр на кубический сантиметр-my_split-1e+15</item>
+        <item>метр на кубический ярд-my_split-7.645548581678e+20</item>
+        <item>метр на кубический фут-my_split-2.831684659319e+19</item>
+        <item>метр на кубический дюйм-my_split-1.638706400127e+16</item>
+        <item>метр на кварту США-my_split-9.463529463874e+17</item>
+        <item>метр на брит. кварту-my_split-1.136524822963e+18</item>
+        <item>метр на пинту США-my_split-4.731764729698e+17</item>
+        <item>метр на брит. пинту-my_split-5.682624116755e+17</item>
+        <item>метр на стакан США-my_split-2.365882364849e+17</item>
+        <item>метр на брит. стакан-my_split-2.841312059185e+17</item>
+        <item>метр на жидкую унцию США-my_split-2.957352956411e+16</item>
+        <item>метр на брит. жидкую унцию-my_split-2.841312059185e+16</item>
+        <item>литр на метр-my_split-1e-18</item>
+        <item>литр на 100 км-my_split-1e-13</item>
+        <item>галлон США на милю-my_split-4.251437074976e-16</item>
+        <item>галлон США на 100 миль-my_split-4.251437074976e-14</item>
+        <item>британский галлон на милю-my_split-3.540061899559e-16</item>
+        <item>британский галлон на 100 миль-my_split-3.540061899559e-14</item>
     </string-array>
     <string-array name="number">
-
+        <item>двоичное</item>
+        <item>восьмеричное</item>
+        <item>десятичное</item>
+        <item>шестнадцатеричное</item>
+        <item>основание 2</item>
+        <item>основание 3</item>
+        <item>основание 4</item>
+        <item>основание 5</item>
+        <item>основание 6</item>
+        <item>основание 7</item>
+        <item>основание 8</item>
+        <item>основание 9</item>
+        <item>основание 10</item>
+        <item>основание 11</item>
+        <item>основание 12</item>
+        <item>основание 13</item>
+        <item>основание 14</item>
+        <item>основание 15</item>
+        <item>основание 16</item>
+        <item>основание 17</item>
+        <item>основание 18</item>
+        <item>основание 19</item>
+        <item>основание 20</item>
+        <item>основание 21</item>
+        <item>основание 22</item>
+        <item>основание 23</item>
+        <item>основание 24</item>
+        <item>основание 25</item>
+        <item>основание 26</item>
+        <item>основание 27</item>
+        <item>основание 28</item>
+        <item>основание 29</item>
+        <item>основание 30</item>
+        <item>основание 31</item>
+        <item>основание 32</item>
+        <item>основание 33</item>
+        <item>основание 34</item>
+        <item>основание 35</item>
+        <item>основание 36</item>
     </string-array>
     <string-array name="information">
+        <item>терабайт-my_split-1.0</item>
+        <item>бит-my_split-8e+12</item>
+        <item>ниббл-my_split-2e+12</item>
+        <item>байт-my_split-1000000000000</item>
+        <item>символ-my_split-1000000000000</item>
+        <item>машинное слово-my_split-500000000000</item>
+        <item>Машинное слово MAPM-my_split-250000000000</item>
+        <item>учетверенное слово-my_split-125000000000</item>
+        <item>блок-my_split-1953125000</item>
+        <item>килобит-my_split-7812500000</item>
+        <item>килобайт-my_split-976562500</item>
+        <item>килобайт (10³байт)-my_split-1000000000</item>
+        <item>мегабит-my_split-7629394.53125</item>
+        <item>мегабайт-my_split-953674.3164062</item>
+        <item>мегабайт (10^6 байт)-my_split-1000000</item>
+        <item>гигабит-my_split-7450.580596924</item>
+        <item>гигабайт-my_split-931.3225746155</item>
+        <item>гигабайт (10⁹ байт)-my_split-1000</item>
+        <item>терабит-my_split-7.275957614183</item>
+        <item>терабайт-my_split-0.9094947017729</item>
+        <item>петабит-my_split-0.007105427357601</item>
+        <item>петабайт-my_split-0.0008881784197001</item>
+        <item>петабайт (10¹⁵ байт)-my_split-0.001</item>
+        <item>эксабит-my_split-0.000006938893903907</item>
+        <item>эксабайт-my_split-8.673617379884e-7</item>
+        <item>эксабайт (10¹⁸ байт)-my_split-0.000001</item>
+        <item>дискета (3.5, дв. плотности)-my_split-1372058.30699</item>
+        <item>дискета (3.5, выс. пл.)-my_split-686029.1534949</item>
+        <item>дискета (3.5, расшир. пл.)-my_split-343014.5767475</item>
+        <item>дискета (5,25, дв. пл.)-my_split-2744116.61398</item>
+        <item>дискета (5,25, выс. пл.)-my_split-823755.7992408</item>
+        <item>Zip 100-my_split-9956.998511389</item>
+        <item>Zip 250-my_split-3982.799404556</item>
+        <item>Jaz 1GB-my_split-931.3225746155</item>
+        <item>Jaz 2GB-my_split-465.6612873077</item>
+        <item>CD (74 минуты)-my_split-1468.303072038</item>
+        <item>CD (80 минут)-my_split-1358.180342682</item>
+        <item>DVD (1 слой, 1 сторона)-my_split-198.1537392799</item>
+        <item>DVD (2 слоя, 1 сторона)-my_split-109.5673617195</item>
+        <item>DVD (1 слой, 1 сторона)-my_split-99.07686963994</item>
+        <item>DVD (2 слоя, 2 стороны)-my_split-54.78368085973</item>
+        <item>Однослойный диск Blu-ray-my_split-37.25290298462</item>
+        <item>Двухслойный диск Blu-ray-my_split-18.62645149231</item>
 
     </string-array>
  <!--endPopular-->
