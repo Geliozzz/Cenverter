@@ -2,7 +2,6 @@ package convert.oxbao.ru.cenverter;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -13,27 +12,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+public class NumberFragment extends CommonFragment {
 
-public class CommonFragment extends Fragment {
-    protected Spinner InSpinner;
-    protected Spinner OutSpinner;
-    protected EditText edtIn;
-    protected TextView tvOut;
-    protected int index1;
-    protected int index2;
-
-
-    public CommonFragment() {
-
-    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-
-
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.com_lay, container, false);
         InSpinner = (Spinner) rootView.findViewById(R.id.spinIn_moment);
         OutSpinner = (Spinner) rootView.findViewById(R.id.spinOut_moment);
@@ -42,6 +25,8 @@ public class CommonFragment extends Fragment {
 
         InSpinner.setAdapter(MainActivity.adapter);
         OutSpinner.setAdapter(MainActivity.adapter);
+
+        edtIn.setInputType(1);
 
 
 
@@ -94,17 +79,24 @@ public class CommonFragment extends Fragment {
 
         return rootView;
     }
+
+    @Override
     protected String calculate(int i1, int i2, String inData, String[] choose) {
-        double comUnit;
+        String ret = "";
 
         try {
-            comUnit = Double.parseDouble(inData);
-            comUnit = comUnit * Double.parseDouble(choose[i2]) / (Double.parseDouble(choose[i1]));
-        } catch (Exception e) {
+
+
+                int tmp = Integer.parseInt(inData, Integer.parseInt(choose[i1]));
+                ret = Integer.toString(tmp, Integer.parseInt(choose[i2]));
+
+        }catch (Exception e)
+        {
             e.printStackTrace();
-            return getResources().getString(R.string.EnterVal);
+            return getResources().getString(R.string.invalid);
+
         }
 
-        return String.valueOf(comUnit);
+        return ret;
     }
 }

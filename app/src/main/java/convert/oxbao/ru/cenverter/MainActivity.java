@@ -41,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             //display view for selected nav drawer item
-         //   displayView(i, 0);
+            //   displayView(i, 0);
         }
     }
 
@@ -54,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
         myDrawerTitle = getResources().getString(R.string.menu);
 
         //load slide menu items
-       // viewsNames = getResources().getStringArray(R.array.);
+        // viewsNames = getResources().getStringArray(R.array.);
         myDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         /*Drop shadow*/
         myDrawerLayout.setDrawerShadow(R.drawable.abc_search_dropdown_dark, GravityCompat.START);
@@ -85,14 +85,14 @@ public class MainActivity extends ActionBarActivity {
                     String[] length = getResources().getStringArray(R.array.popular);
                     for (int j = 0; j < length.length; j++)
                     {
-                        groups.get(i).add(length[j]);
+                        groups.get(i).add(length[j].split(mSplit)[0]);
                     }
                     break;
                 case 1:
                     String[] mechanic = getResources().getStringArray(R.array.mechanic);
                     for (int j = 0; j < mechanic.length; j++)
                     {
-                        groups.get(i).add(mechanic[j]);
+                        groups.get(i).add(mechanic[j].split(mSplit)[0]);
                     }
                     break;
 
@@ -152,19 +152,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * **************function calculate*******************************
      */
-    public static String calculate(int i1, int i2, String inData, String[] choose) {
-        double comUnit;
 
-        try {
-            comUnit = Double.parseDouble(inData);
-            comUnit = comUnit * Double.parseDouble(choose[i2]) / (Double.parseDouble(choose[i1]));
-        } catch (Exception e) {
-            e.printStackTrace();
-            comUnit = 0;
-        }
-
-        return String.valueOf(comUnit);
-    }
 
     /**
      * **************************************************************
@@ -188,6 +176,20 @@ public class MainActivity extends ActionBarActivity {
         adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, title_name);
 
         return new CommonFragment();
+    }
+    /**function set adapter for spinner use for specific forms  */
+    private void setAdapter(int resource) {
+        String[] mRes = getResources().getStringArray(resource);
+        title_name = new String[mRes.length];
+        coeff = new String[mRes.length];
+        for (int i = 0; i < mRes.length; i++) {
+            String[] tmp = mRes[i].split(mSplit);
+            title_name[i] = tmp[0];
+            if (tmp.length >= 2) {
+                coeff[i] = tmp[1];
+            }
+        }
+        adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, title_name);
     }
 
 
@@ -218,19 +220,56 @@ public class MainActivity extends ActionBarActivity {
     private void displayView(int position, int i2) {
         // update the maon content by replacing fragments
         Fragment fragment = null;
-       int  pos_calc = position * 1000 + i2;
-        switch (pos_calc) {
+        switch (position*1000+i2) {
             case 0:
                 fragment = newForm(R.array.length);
                 break;
             case 1:
-                fragment = newForm(R.array.AngleSpeed);
+                fragment = newForm(R.array.mass);
                 break;
             case 2:
-                fragment = newForm(R.array.Title_moment_power);
+                fragment = newForm(R.array.volume_stew);
                 break;
             case 3:
-                fragment = newForm(R.array.Title_moment_power);
+                fragment = newForm(R.array.Title_area);
+                break;
+            case 4:
+                fragment = newForm(R.array.volume_cook);
+                break;
+            case 5:
+                setAdapter(R.array.temperature);
+                fragment = new TemperFragment();
+                break;
+            case 6:
+                fragment = newForm(R.array.pressure);
+                break;
+            case 7:
+                fragment = newForm(R.array.energy);
+                break;
+            case 8:
+                fragment = newForm(R.array.power);
+                break;
+            case 9:
+                fragment = newForm(R.array.force);
+                break;
+            case 10:
+                fragment = newForm(R.array.time);
+                break;
+            case 11:
+                fragment = newForm(R.array.speed);
+                break;
+            case 12:
+                fragment = newForm(R.array.angle);
+                break;
+            case 13:
+                fragment = newForm(R.array.heat);
+                break;
+            case 14:
+                setAdapter(R.array.number);
+                fragment = new NumberFragment();
+                break;
+            case 15:
+                fragment = newForm(R.array.information);
                 break;
             default:
 
@@ -240,8 +279,8 @@ public class MainActivity extends ActionBarActivity {
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
             // update selected item and title? the close drawer
-         //   myDrawerList.setItemChecked(position, true);
-          //  myDrawerList.setSelection(position);
+            //   myDrawerList.setItemChecked(position, true);
+            //  myDrawerList.setSelection(position);
             setTitle(groups.get(position).get(i2));
             myDrawerLayout.closeDrawer(myDrawerList);
         } else {

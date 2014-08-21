@@ -10,6 +10,7 @@
     <string name="EnterVal">Введите значение</string>
     <string name="drawer_open">drawer_open</string>
     <string name="drawer_close">drawer_close</string>
+    <string name="invalid">Неправильный ввод</string>
 
     <string-array name="groups">
         <item>Популярные</item>
@@ -330,11 +331,11 @@
 
     </string-array> 
     <string-array name="temperature">
-        <item>Кельвин[K]-my_split-1.0</item>
-        <item>градус Цельсия[°С]-my_split--272.15</item>
-        <item>градус Фаренгейта[°F]-my_split--457.87</item>
-        <item>градус Ранкина[°Ra]-my_split-1.8</item>
-        <item>градус Реомюра[°R]-my_split--217.72</item>
+        <item>градус Цельсия[°С]-my_split-1.0</item>
+        <item>Кельвин[K]-my_split--274.15</item>
+        <item>градус Фаренгейта[°F]-my_split-33.8</item>
+        <item>градус Ранкина[°Ra]-my_split-493.47</item>
+        <item>градус Реомюра[°R]-my_split-0.8</item>
     </string-array>
     <string-array name="pressure">
         <item>паскаль-my_split-1.0</item>
@@ -663,45 +664,45 @@
         <item>британский галлон на 100 миль-my_split-3.540061899559e-14</item>
     </string-array>
     <string-array name="number">
-        <item>двоичное</item>
-        <item>восьмеричное</item>
-        <item>десятичное</item>
-        <item>шестнадцатеричное</item>
-        <item>основание 2</item>
-        <item>основание 3</item>
-        <item>основание 4</item>
-        <item>основание 5</item>
-        <item>основание 6</item>
-        <item>основание 7</item>
-        <item>основание 8</item>
-        <item>основание 9</item>
-        <item>основание 10</item>
-        <item>основание 11</item>
-        <item>основание 12</item>
-        <item>основание 13</item>
-        <item>основание 14</item>
-        <item>основание 15</item>
-        <item>основание 16</item>
-        <item>основание 17</item>
-        <item>основание 18</item>
-        <item>основание 19</item>
-        <item>основание 20</item>
-        <item>основание 21</item>
-        <item>основание 22</item>
-        <item>основание 23</item>
-        <item>основание 24</item>
-        <item>основание 25</item>
-        <item>основание 26</item>
-        <item>основание 27</item>
-        <item>основание 28</item>
-        <item>основание 29</item>
-        <item>основание 30</item>
-        <item>основание 31</item>
-        <item>основание 32</item>
-        <item>основание 33</item>
-        <item>основание 34</item>
-        <item>основание 35</item>
-        <item>основание 36</item>
+        <item>двоичное-my_split-2</item>
+        <item>восьмеричное-my_split-8</item>
+        <item>десятичное-my_split-10</item>
+        <item>шестнадцатеричное-my_split-16</item>
+        <item>основание 2-my_split-2</item>
+        <item>основание 3-my_split-3</item>
+        <item>основание 4-my_split-4</item>
+        <item>основание 5-my_split-5</item>
+        <item>основание 6-my_split-6</item>
+        <item>основание 7-my_split-7</item>
+        <item>основание 8-my_split-8</item>
+        <item>основание 9-my_split-9</item>
+        <item>основание 10-my_split-10</item>
+        <item>основание 11-my_split-11</item>
+        <item>основание 12-my_split-12</item>
+        <item>основание 13-my_split-13</item>
+        <item>основание 14-my_split-14</item>
+        <item>основание 15-my_split-15</item>
+        <item>основание 16-my_split-16</item>
+        <item>основание 17-my_split-17</item>
+        <item>основание 18-my_split-18</item>
+        <item>основание 19-my_split-19</item>
+        <item>основание 20-my_split-20</item>
+        <item>основание 21-my_split-21</item>
+        <item>основание 22-my_split-22</item>
+        <item>основание 23-my_split-23</item>
+        <item>основание 24-my_split-24</item>
+        <item>основание 25-my_split-25</item>
+        <item>основание 26-my_split-26</item>
+        <item>основание 27-my_split-27</item>
+        <item>основание 28-my_split-28</item>
+        <item>основание 29-my_split-29</item>
+        <item>основание 30-my_split-30</item>
+        <item>основание 31-my_split-31</item>
+        <item>основание 32-my_split-32</item>
+        <item>основание 33-my_split-33</item>
+        <item>основание 34-my_split-34</item>
+        <item>основание 35-my_split-35</item>
+        <item>основание 36-my_split-36</item>
     </string-array>
     <string-array name="information">
         <item>терабайт-my_split-1.0</item>
