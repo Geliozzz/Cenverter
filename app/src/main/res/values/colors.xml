@@ -5,4 +5,5 @@
     <color name="mWhite">#FFFFFFFF</color>
     <color name="mNoColor">#00000000</color>
     <color name="background_comlay">#fff9ffe5</color>
+    <color name="mRed">#FFFF0A00</color>
 </resources>
