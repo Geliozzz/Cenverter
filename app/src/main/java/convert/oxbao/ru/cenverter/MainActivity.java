@@ -95,6 +95,13 @@ public class MainActivity extends ActionBarActivity {
                         groups.get(i).add(mechanic[j].split(mSplit)[0]);
                     }
                     break;
+                case 2:
+                    String[] termod = getResources().getStringArray(R.array.termodinamic);
+                    for (int j = 0; j < termod.length; j++)
+                    {
+                        groups.get(i).add(termod[j].split(mSplit)[0]);
+                    }
+                    break;
 
             }
         }
@@ -271,8 +278,29 @@ public class MainActivity extends ActionBarActivity {
             case 15:
                 fragment = newForm(R.array.information);
                 break;
-            default:
+            case 1000:
+                fragment = newForm(R.array.AngleSpeed);
+                break;
+            case 1001:
+                fragment = newForm(R.array.accelerate);
+                break;
+            case 1002:
+                fragment = newForm(R.array.AngleAccelerate);
+                break;
+            case 1003:
+                fragment = newForm(R.array.density);
+                break;
+            case 1004:
+                fragment = newForm(R.array.specificVolume);
+                break;
+            case 1005:
+                fragment = newForm(R.array.momentOfInertia);
+                break;
+            case 1006:
+                fragment = newForm(R.array.moment_power);
+                break;
 
+            default:
                 break;
         }
         if (fragment != null) {

@@ -761,7 +761,6 @@
         <item>Удельный объем</item>
         <item>Момент инерции</item>
         <item>Мосент силы</item>
-        <item>Вращающий момент</item>
     </string-array>
 
     <string-array name="AngleSpeed">
@@ -799,16 +798,85 @@
         <item>ускорение свободного падения[g]-my_split-0.1019716212978</item>
     </string-array>
     <string-array name="AngleAccelerate">
-        <item>234</item>
+        <item>радиан в секунду-my_split-1.0</item>
+        <item>радиан в сутки-my_split-86400</item>
+        <item>радиан в час-my_split-3600</item>
+        <item>радиан в минуту-my_split-60</item>
+        <item>градус в сутки-my_split-4950355.34993</item>
+        <item>градус в сутки-my_split-4950355.34993</item>
+        <item>градус в минуту-my_split-3437.746770785</item>
+        <item>радиан в секунду-my_split-57.29577951308</item>
+        <item>оборотов в сутки-my_split-13750.98708314</item>
+        <item>оборотов в час-my_split-572.9577951308</item>
+        <item>оборотов в минуту-my_split-9.549296585514</item>
+        <item>оборотов в секунду-my_split-0.1591549430919</item>
     </string-array>
     <string-array name="density">
-        <item>123</item>
+        <item>килограмм на кубический метр-my_split-1.0</item>
+        <item>килограмм на кубический сантиметр-my_split-0.000001</item>
+        <item>грамм на кубический метр-my_split-1000</item>
+        <item>грамм на кубический сантиметр-my_split-0.001</item>
+        <item>грамм на кубический миллиметр-my_split-0.000001</item>
+        <item>миллиграмм на кубический метр-my_split-1000000</item>
+        <item>миллиграмм на кубический сантиметр-my_split-1.0</item>
+        <item>миллиграмм на кубический миллиметр-my_split-0.001</item>
+        <item>эксаграмм на литр-my_split-1e-18</item>
+        <item>петаграмм на литр-my_split-1e-15</item>
+        <item>тераграмм на литр-my_split-1e-12</item>
+        <item>гигаграмм на литр-my_split-1e-9</item>
+        <item>мегаграмм на литр-my_split-0.000001</item>
+        <item>килограмм на литр-my_split-0.001</item>
+        <item>гектограмм на литр-my_split-0.01</item>
+        <item>декаграмм на литр-my_split-0.1</item>
+        <item>грамм на литр-my_split-1.0</item>
+        <item>дециграмм на литр-my_split-10</item>
+        <item>сантиграмм на литр-my_split-100</item>
+        <item>миллиграмм на литр-my_split-1000</item>
+        <item>микрограмм на литр-my_split-1000000</item>
+        <item>пикограмм на литр-my_split-1000000000000</item>
+        <item>фемтограмм на литр-my_split-1e+15</item>
+        <item>аттограмм на литр-my_split-1e+18</item>
+        <item>фунт на кубический дюйм-my_split-0.0000361272920001</item>
+        <item>фунт на кубический фут-my_split-0.06242796057617</item>
+        <item>фунт на кубический ярд-my_split-1.685554935556</item>
+        <item>фунт на галлон (США)-my_split-0.008345404452031</item>
+        <item>фунт на галлон (брит.)-my_split-0.01002241285496</item>
+        <item>унция на кубический дюйм-my_split-0.0005780366720016</item>
+        <item>унция на кубический фут-my_split-0.9988473692188</item>
+        <item>унция на галлон (США)-my_split-0.1335264712325</item>
+        <item>унция на галлон (брит.)-my_split-0.1603586056794</item>
+        <item>гран на галлон (США)-my_split-58.41783116414</item>
+        <item>гран на галлон (брит.)-my_split-70.15688998472</item>
+        <item>гран на кубический фут-my_split-436.995724033</item>
+        <item>короткая тонна на кубический ярд-my_split-0.0008427774677783</item>
+        <item>длинная тонна на кубический ярд-my_split-0.0007524798819446</item>
+        <item>слаг на кубический фут-my_split-0.00194032033198</item>
+        <item>средняя плотность Земли-my_split-0.0001812250815513</item>
     </string-array>
     <string-array name="specificVolume">
-        <item>123</item>
+        <item>кубический метр на килограмм-my_split-1.0</item>
+        <item>кубический сантиметр на грамм-my_split-1000</item>
+        <item>литр на килограмм-my_split-1000</item>
+        <item>литр на грамм-my_split-1.0</item>
+        <item>кубический фут на килограмм-my_split-35.31466672</item>
+        <item>кубический фут на фунт-my_split-16.01846353</item>
+        <item>галлон (США) на фунт-my_split-119.826435935</item>
+        <item>галлон (брит.) на фунт-my_split-99.77637365</item>
     </string-array>
     <string-array name="momentOfInertia">
-        <item>123</item>
+        <item>килограмм кв. метр-my_split-1.0</item>
+        <item>килограмм кв. сантиметр-my_split-10000</item>
+        <item>килограмм кв. миллиметр-my_split-1000000</item>
+        <item>грамм кв. сантиметр-my_split-10000000</item>
+        <item>грамм кв. миллиметр-my_split-1000000000</item>
+        <item>килограмм-сила метр кв. секунда-my_split-0.1019716213</item>
+        <item>унция кв. дюйм-my_split-54674.74983</item>
+        <item>унция-сила дюйм кв. секунда-my_split-141.6119312</item>
+        <item>фунт кв. фут-my_split-23.73036040423</item>
+        <item>фунт-сила фут кв. секунда-my_split-0.7375621419</item>
+        <item>фунт кв. дюйм-my_split-3417.171898209</item>
+        <item>фунт кв. дюйм-my_split-3417.171898209</item>
+        <item>слаг кв. фут-my_split-0.7375621419</item>
     </string-array>
     <string-array name="moment_power">
         <item>ньютон-метр[Н*м]-my_split-1.0</item>
@@ -824,9 +892,21 @@
         <item>пундаль-фут-my_split-23.73036608836</item>
         <item>пундаль-дюйм-my_split-284.7643930603</item>
     </string-array>
-    <string-array name="rotatingMoment">
-        <item>123</item>
+
+
+    <string-array name="termodinamic">
+        <item>Удельная теплота сгорания (по массе)</item>
+        <item>Удельная теплота сгорания топлива (по объему)</item>
+        <item>Разность температур</item>
+        <item>Коэффициент теплового расширения</item>
+        <item>Термическое сопротивление</item>
+        <item>Удельная теплопроводность</item>
+        <item>Удельная теплоёмкость</item>
+        <item>Энергетическая экспозиция, мощность теплового излучения</item>
+        <item>Плотность теплового потока</item>
+        <item>Коэффициент теплоотдачи</item>
     </string-array>
+
 
     
 
