@@ -763,20 +763,7 @@
         <item>Мосент силы</item>
         <item>Вращающий момент</item>
     </string-array>
-    <string-array name="Title_moment_power">
-        <item>ньютон-метр[Н*м]-my_split-1.0</item>
-        <item>килоньютон-метр[кН*м]-my_split-0.001</item>
-        <item>миллиньютон-метр[мН*м]-my_split-1000.0</item>
-        <item>микроньютон-метр[мкН*м]-my_split-1000000.0</item>
-        <item>тонна-сила(короткая)-метр-my_split-0.0001124045123667</item>
-        <item>тонна-сила(длинная)-метр-my_split-0.000100361099235</item>
-        <item>тонна-сила(метрическая)-метр-my_split-0.0001019716212978</item>
-        <item>килограмм-сила-метр[кгс*м]-my_split-0.1019716212978</item>
-        <item>грамм-сила-сантиметр[гс*см]-my_split-10197.16212978</item>
-        <item>фунт-сила-фут-my_split-0.7375610331755</item>
-        <item>пундаль-фут-my_split-23.73036608836</item>
-        <item>пундаль-дюйм-my_split-284.7643930603</item>
-    </string-array>
+
     <string-array name="AngleSpeed">
         <item>Радиан в секунду[рад/c]-my_split-1.0</item>
         <item>Радиан в сутки[рад/cут.]-my_split-86400.0</item>
@@ -791,12 +778,59 @@
         <item>Оборотов в минуту[об/мин]-my_split-9.549296585514</item>
         <item>Оборотов в секунду[об/с]-my_split-0.1591549430919</item>
     </string-array>
-    
-    <string-array name="views_array">
-        <item>Площадь</item>
-        <item>Скорость вращения</item>
-        <item>Момент силы</item>
+    <string-array name="accelerate">
+        <item>метр в секунду за секунду[м/с<sup>2</sup>]-my_split-1.0</item>
+        <item>дециметр в секунду за секунду-my_split-10</item>
+        <item>километр в секунду за секунду-my_split-0.001</item>
+        <item>гектометр в секунду за секунду-my_split-0.01</item>
+        <item>декаметр в секунду за секунду-my_split-0.1</item>
+        <item>сантиметр в секунду за секунду-my_split-100</item>
+        <item>миллиметр в секунду за секунду-my_split-1000</item>
+        <item>микрометр в секунду за секунду-my_split-1000000</item>
+        <item>нанометр в секунду за секунду-my_split-1000000000</item>
+        <item>пикометр в секунду за секунду-my_split-1000000000000</item>
+        <item>фемтометр в секунду за секунду-my_split-1e+15</item>
+        <item>аттометр в секунду за секунду-my_split-1e+18</item>
+        <item>галилео[гл]-my_split-100</item>
+        <item>миля в секунду за секунду-my_split-0.0006213711922373</item>
+        <item>ярд в секунду за секунду-my_split-1.093613298338</item>
+        <item>фут в секунду за секунду-my_split-3.280839895013</item>
+        <item>дюйм в секунду за секунду-my_split-39.37007874016</item>
+        <item>ускорение свободного падения[g]-my_split-0.1019716212978</item>
     </string-array>
+    <string-array name="AngleAccelerate">
+        <item>234</item>
+    </string-array>
+    <string-array name="density">
+        <item>123</item>
+    </string-array>
+    <string-array name="specificVolume">
+        <item>123</item>
+    </string-array>
+    <string-array name="momentOfInertia">
+        <item>123</item>
+    </string-array>
+    <string-array name="moment_power">
+        <item>ньютон-метр[Н*м]-my_split-1.0</item>
+        <item>килоньютон-метр[кН*м]-my_split-0.001</item>
+        <item>миллиньютон-метр[мН*м]-my_split-1000.0</item>
+        <item>микроньютон-метр[мкН*м]-my_split-1000000.0</item>
+        <item>тонна-сила(короткая)-метр-my_split-0.0001124045123667</item>
+        <item>тонна-сила(длинная)-метр-my_split-0.000100361099235</item>
+        <item>тонна-сила(метрическая)-метр-my_split-0.0001019716212978</item>
+        <item>килограмм-сила-метр[кгс*м]-my_split-0.1019716212978</item>
+        <item>грамм-сила-сантиметр[гс*см]-my_split-10197.16212978</item>
+        <item>фунт-сила-фут-my_split-0.7375610331755</item>
+        <item>пундаль-фут-my_split-23.73036608836</item>
+        <item>пундаль-дюйм-my_split-284.7643930603</item>
+    </string-array>
+    <string-array name="rotatingMoment">
+        <item>123</item>
+    </string-array>
+
+    
+
+
 
 
 </resources>
