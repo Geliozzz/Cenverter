@@ -1101,6 +1101,176 @@
         <item>фунтов бензина при 15.5°C в час-my_split-5867789.625048</item>
         <item>фунтов бензина при 15.5°C в сутки-my_split-140826951.0509</item>
     </string-array>
+    <string-array name="massFlowwRate">
+        <item>килограмм в секунду[кг/с]-my_split-1.0</item>
+        <item>грамм в секунду-my_split-1000</item>
+        <item>грамм в минуту-my_split-60000</item>
+        <item>грамм в час-my_split-3600000</item>
+        <item>грамм в сутки-my_split-86400000</item>
+        <item>миллиграмм в минуту-my_split-60000000</item>
+        <item>миллиграмм в час-my_split-3600000000</item>
+        <item>миллиграмм в сутки-my_split-86400000000</item>
+        <item>килограмм в минуту-my_split-60</item>
+        <item>килограмм в час-my_split-3600</item>
+        <item>килограмм в сутки-my_split-86400</item>
+        <item>эксаграмм в секунду-my_split-1e-15</item>
+        <item>петаграмм в секунду-my_split-1e-12</item>
+        <item>тераграмм в секунду-my_split-1e-9</item>
+        <item>гигаграмм в секунду-my_split-0.000001</item>
+        <item>мегаграмм в секунду-my_split-0.001</item>
+        <item>гектограмм в секунду-my_split-10</item>
+        <item>декаграмм в секунду-my_split-100</item>
+        <item>дециграмм в секунду-my_split-10000</item>
+        <item>сантиграмм в секунду-my_split-100000</item>
+        <item>миллиграмм в секунду-my_split-1000000</item>
+        <item>микрограмм в секунду-my_split-1000000000</item>
+        <item>тонна (метрическая) в секунду-my_split-0.001</item>
+        <item>тонна (метрическая) в минуту-my_split-0.06</item>
+        <item>тонна (метрическая) в час-my_split-3.6</item>
+        <item>тонна (метрическая) в сутки-my_split-86.4</item>
+        <item>тонна (короткая) в час-my_split-3.968320719328</item>
+        <item>фунт в секунду-my_split-2.204622621849</item>
+        <item>фунт в минуту-my_split-132.2773573109</item>
+        <item>фунт в час-my_split-7936.641438656</item>
+        <item>фунт в сутки-my_split-190479.3945277</item>
+    </string-array>
+    <string-array name="moleFlowRate">
+        <item>моль в секунду-my_split-1.0</item>
+        <item>эксамоль в секунду-my_split-1e-18</item>
+        <item>петамоль в секунду-my_split-1e-15</item>
+        <item>терамоль в секунду-my_split-1e-12</item>
+        <item>гигамоль в секунду-my_split-1e-9</item>
+        <item>мегамоль в секунду-my_split-0.000001</item>
+        <item>киломоль в секунду-my_split-0.001</item>
+        <item>гектомоль в секунду-my_split-0.01</item>
+        <item>декамоль в секунду-my_split-0.1</item>
+        <item>децимоль в секунду-my_split-10</item>
+        <item>сантимоль в секунду-my_split-100</item>
+        <item>миллимоль в секунду-my_split-1000</item>
+        <item>микромоль в секунду-my_split-1000000</item>
+        <item>наномоль в секунду-my_split-1000000000</item>
+        <item>пикомоль в секунду-my_split-1000000000000</item>
+        <item>фемтомоль в секунду-my_split-1e+15</item>
+        <item>аттомоль в секунду-my_split-1e+18</item>
+        <item>моль в минуту-my_split-60</item>
+        <item>моль в час-my_split-3600</item>
+        <item>моль в сутки-my_split-86400</item>
+        <item>миллимоль в минуту-my_split-60000</item>
+        <item>миллимоль в час-my_split-3600000</item>
+        <item>миллимоль в сутки-my_split-86400000</item>
+        <item>киломоль в минуту-my_split-0.06</item>
+        <item>киломоль в час-my_split-3.6</item>
+        <item>киломоль в сутки-my_split-86.4</item>
+    </string-array>
+    <string-array name="densityFlowMass">
+        <item>грамм в секунду на кв. метр[г/(с*м<sup>2</sup>)]-my_split-1.0</item>
+        <item>килограмм в час на кв. метр-my_split-3.599999999712</item>
+        <item>килограмм в час на кв. фут-my_split-0.3344509438292</item>
+        <item>килограмм в секунду на кв. метр-my_split-0.001</item>
+        <item>грамм в секунду на кв. сантиметр-my_split-0.0001</item>
+        <item>фунт в час на кв. фут-my_split-0.737338109341</item>
+        <item>фунт в секунду на кв. фут-my_split-0.0002048161414876</item>
+    </string-array>
+    <string-array name="moleConcentration">
+        <item>моль на метр³[моль/м<sup>3</sup>]-my_split-1.0</item>
+        <item>моль на литр-my_split-0.001</item>
+        <item>моль на сантиметр³-my_split-0.000001</item>
+        <item>моль на миллиметр³-my_split-1e-9</item>
+        <item>киломоль на метр³-my_split-0.001</item>
+        <item>киломоль на литр-my_split-0.000001</item>
+        <item>киломоль на сантиметр³-my_split-1e-9</item>
+        <item>киломоль на миллиметр³-my_split-1e-12</item>
+        <item>миллимоль на метр³-my_split-1000</item>
+        <item>миллимоль на литр-my_split-1.0</item>
+        <item>миллимоль на сантиметр³-my_split-0.001</item>
+        <item>миллимоль на миллиметр³-my_split-0.000001</item>
+    </string-array>
+    <string-array name="moleConcentrationSolution">
+        <item>килограмм на литр[кг/л]-my_split-1.0</item>
+        <item>грамм на литр-my_split-1000</item>
+        <item>миллиграмм на литр-my_split-1000000</item>
+        <item>частей на миллион-my_split-1001142.303</item>
+        <item>гран на галлон (США)-my_split-58417.8306</item>
+        <item>гран на галлон (брит.)-my_split-70156.88929</item>
+        <item>фунт на галлон (США)-my_split-8.345404374</item>
+        <item>фунт на галлон (брит.)-my_split-10.02241276</item>
+        <item>миллионная фунта на галлон (США)-my_split-8345404.374</item>
+        <item>фунт на миллион галлонов (брит.)-my_split-10022412.76</item>
+        <item>фунт на кубический фут-my_split-62.42796</item>
+    </string-array>
+    <string-array name="dinamicVisconsity">
+        <item>паскаль-секунда[Па*с]-my_split-1.0</item>
+        <item>килограмм-сила-сек. на кв. метр-my_split-0.1019716212978</item>
+        <item>ньютон-сек. на кв. метр-my_split-1.0</item>
+        <item>миллиньютон-секунда на кв. метр-my_split-1000</item>
+        <item>дина-секунда на кв. сантиметр-my_split-10</item>
+        <item>пуаз-my_split-10</item>
+        <item>эксапуаз-my_split-1e-17</item>
+        <item>петапуаз-my_split-1e-14</item>
+        <item>терапуаз-my_split-1e-11</item>
+        <item>гигапуаз-my_split-1e-8</item>
+        <item>мегапуаз-my_split-0.00001</item>
+        <item>килопуаз-my_split-0.01</item>
+        <item>гектопуаз-my_split-0.1</item>
+        <item>декапуаз-my_split-1.0</item>
+        <item>деципуаз-my_split-100</item>
+        <item>сантипуаз-my_split-1000</item>
+        <item>миллипуаз-my_split-10000</item>
+        <item>микропуаз-my_split-10000000</item>
+        <item>нанопуаз-my_split-10000000000</item>
+        <item>пикопуаз-my_split-1e+13</item>
+        <item>фемтопуаз-my_split-1e+16</item>
+        <item>аттопуаз-my_split-1e+19</item>
+        <item>фунт-сила-сек. на кв. дюйм-my_split-0.0001450377377302</item>
+        <item>фунт-сила-сек. на кв. фут-my_split-0.0208854342332</item>
+        <item>паундаль-секунда на кв. фут-my_split-0.67196897514</item>
+        <item>грамм на сантиметр в секунду-my_split-10</item>
+        <item>слаг на фут в секунду-my_split-0.0208854342332</item>
+        <item>фунт на фут в секунду-my_split-0.67196897514</item>
+        <item>фунт на фут в час-my_split-2419.088310502</item>
+    </string-array>
+    <string-array name="kinemVisconsity">
+        <item>квадратный метр в секунду[м<sup>2</sup>]-my_split-1.0</item>
+        <item>квадратный метр в час-my_split-3600</item>
+        <item>квадратный сантиметр в секунду-my_split-10000</item>
+        <item>квадратный миллиметр в секунду-my_split-1000000</item>
+        <item>квадратный фут в секунду-my_split-10.7639104167</item>
+        <item>квадратный фут в час-my_split-38750.07750016</item>
+        <item>квадратный дюйм в секунду-my_split-1550.003100006</item>
+        <item>стокс-my_split-10000</item>
+        <item>эксастокс-my_split-1e-14</item>
+        <item>петастокс-my_split-1e-11</item>
+        <item>терастокс-my_split-1e-8</item>
+        <item>гигастокс-my_split-0.00001</item>
+        <item>мегастокс-my_split-0.01</item>
+        <item>килостокс-my_split-10</item>
+        <item>гектостокс-my_split-100</item>
+        <item>декастокс-my_split-1000</item>
+        <item>децистокс-my_split-100000</item>
+        <item>сантистокс-my_split-1000000</item>
+        <item>миллистокс-my_split-10000000</item>
+        <item>микростокс-my_split-10000000000</item>
+        <item>наностокс-my_split-1e+13</item>
+        <item>пикостокс-my_split-1e+16</item>
+        <item>фемтостокс-my_split-1e+19</item>
+        <item>аттостокс-my_split-1e+22</item>
+    </string-array>
+    <string-array name="surfaceTension">
+        <item>ньютон на метр[Н/м]-my_split-1.0</item>
+        <item>миллиньютон на метр-my_split-1000</item>
+        <item>грамм-сила на сантиметр-my_split-1.019716213</item>
+        <item>дина на сантиметр-my_split-1000</item>
+        <item>эрг на квадратный сантиметр-my_split-1000</item>
+        <item>эрг на квадратный миллиметр-my_split-10</item>
+        <item>паундаль на дюйм-my_split-0.1837185501</item>
+        <item>фунт-сила на дюйм-my_split-0.005710147098</item>
+    </string-array>
+    <string-array name="vaporPermeability">
+        <item>килограмм на паскаль в секунду на кв. метр-my_split-1.0</item>
+        <item>паропроницаемость (0°C)-my_split-17478392337.47</item>
+        <item>паропроницаемость (23°C)-my_split-17405682955.49</item>
+    </string-array>
+
 
 
 
