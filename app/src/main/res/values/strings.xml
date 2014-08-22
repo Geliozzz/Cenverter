@@ -704,7 +704,7 @@
         <item>основание 35-my_split-35</item>
         <item>основание 36-my_split-36</item>
     </string-array>
-    <string-array name="information">
+    <string-array name="information"> <!--Переделать-->
         <item>терабайт-my_split-1.0</item>
         <item>бит-my_split-8e+12</item>
         <item>ниббл-my_split-2e+12</item>
@@ -907,8 +907,43 @@
         <item>Коэффициент теплоотдачи</item>
     </string-array>
 
+    <string-array name="specificHeatMass">
+        <item>123</item>
+    </string-array>
+    <string-array name="specificHeatVolume">
+        <item>123</item>
+    </string-array>
+    <string-array name="diffTemp">
+        <item>123</item>
+    </string-array>
+    <string-array name="CTE">
+        <item>123</item>
+    </string-array>
+    <string-array name="termResist">
+        <item>123</item>
+    </string-array>
+    <string-array name="thermalConductivity">
+        <item>123</item>
+    </string-array>
+    <string-array name="specificHeat">
+        <item>123</item>
+    </string-array>
+    <string-array name="powerHeat">
+        <item>123</item>
+    </string-array>
+    <string-array name="densityHeat">
+        <item>123</item>
+    </string-array>
+    <string-array name="heatTransferCoefficient">
+        <item>123</item>
+    </string-array>
 
-    
+
+
+
+
+
+
 
 
 
