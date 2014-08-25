@@ -13,6 +13,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 
 public class CommonFragment extends Fragment {
     protected Spinner InSpinner;
@@ -30,9 +33,6 @@ public class CommonFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
-
 
         View rootView = inflater.inflate(R.layout.com_lay, container, false);
         InSpinner = (Spinner) rootView.findViewById(R.id.spinIn_moment);
@@ -104,7 +104,9 @@ public class CommonFragment extends Fragment {
             e.printStackTrace();
             return getResources().getString(R.string.EnterVal);
         }
+        double RoundComUnit = new BigDecimal(comUnit).setScale(7, RoundingMode.UP).doubleValue();
+        RoundComUnit = new BigDecimal(RoundComUnit).setScale(6, RoundingMode.DOWN).doubleValue();
 
-        return String.valueOf(comUnit);
+        return String.valueOf(RoundComUnit);
     }
 }

@@ -11,6 +11,7 @@
     <string name="drawer_open">drawer_open</string>
     <string name="drawer_close">drawer_close</string>
     <string name="invalid">Неправильный ввод</string>
+    <string name="titleName">Конвертер</string>
 
     <string-array name="groups">
         <item>Популярные</item>
@@ -1271,12 +1272,385 @@
         <item>паропроницаемость (23°C)-my_split-17405682955.49</item>
     </string-array>
 
+<string-array name="acustic">
+    <item>Уровень звука</item>
+</string-array>
+    <string-array name="volumeLevel">
+        <item>бел[Б]-my_split-1.0</item>
+        <item>децибел[дБ]-my_split-10</item>
+        <item>непер[Нп]-my_split-1.151277918</item>
+    </string-array>
+
+<string-array name="fotometry">
+    <item>Яркость</item>
+    <item>Сила света</item>
+    <item>Освещённость</item>
+    <item>Разрешение в компьютерной графике</item>
+    <item>Частота и длина волны</item>
+</string-array>
+    
+    <string-array name="brightness">
+        <item>кандела на квадратный метр[кд/м<sup>2</sup>]-my_split-1.0</item>
+        <item>кандела на квадратный сантиметр-my_split-0.0001</item>
+        <item>кандела на квадратный фут-my_split-0.09290304000008</item>
+        <item>кандела на квадратный дюйм-my_split-0.00064516</item>
+        <item>килокандела на квадратный метр-my_split-0.001</item>
+        <item>стильб[сб]-my_split-0.0001</item>
+        <item>люмен на кв. метр на стерадиан-my_split-1.0</item>
+        <item>люмен на кв. сантиметр на стерадиан-my_split-0.0001</item>
+        <item>люмен на квадратный фут не стерадиан-my_split-0.09290304000008</item>
+        <item>нит[нт]-my_split-1.0</item>
+        <item>миллинит-my_split-1000</item>
+        <item>ламберт-my_split-0.000314159265359</item>
+        <item>миллиламберт-my_split-0.314159265359</item>
+        <item>фут-ламберт-my_split-0.2918635079604</item>
+        <item>апостильб-my_split-3.14159265359</item>
+        <item>блондель-my_split-3.14159265359</item>
+        <item>брил-my_split-31415926.5359</item>
+        <item>скот-my_split-3141.59265359</item>
+    </string-array>
+    <string-array name="lumionousIntensity">
+        <item>кандела[кд]-my_split-1.0</item>
+        <item>свеча (немецкая)-my_split-0.95</item>
+        <item>свеча (брит.)-my_split-0.96</item>
+        <item>десятичная свеча-my_split-1.0</item>
+        <item>пентановая свеча-my_split-1.0</item>
+        <item>пентановая свеча (мощностью 10 св)-my_split-1.0</item>
+        <item>свеча Хефнера-my_split-1.111111111</item>
+        <item>единица Карселя-my_split-0.1040582726</item>
+        <item>свеча десятичная (французская)-my_split-1.0</item>
+        <item>люмен/стерадиан-my_split-1.0</item>
+        <item>свеча (международная)-my_split-1.0</item>
+    </string-array>
+    <string-array name="illumination">
+        <item>люкс[лк]-my_split-1.0</item>
+        <item>метр-кандела-my_split-1.0</item>
+        <item>сантиметр-кандела-my_split-0.0001</item>
+        <item>фут-кандела-my_split-0.09290304000008</item>
+        <item>фот-my_split-0.0001</item>
+        <item>нокс-my_split-1000</item>
+        <item>кандела-стерадиан на кв. метр-my_split-1.0</item>
+        <item>люмен на кв. метр-my_split-1.0</item>
+        <item>люмен на кв. сантиметр-my_split-0.0001</item>
+        <item>люмен на кв. фут-my_split-0.09290304000008</item>
+        <item>ватт на кв. см (при 555 нм)-my_split-1.464128843338e-7</item>
+
+    </string-array>
+    <string-array name="resolution">
+        <item>точка на метр[точка/м]-my_split-1.0</item>
+        <item>точка на миллиметр-my_split-0.001</item>
+        <item>точка на дюйм-my_split-0.0254</item>
+        <item>пиксель на дюйм-my_split-0.0254</item>
+    </string-array>
+    <string-array name="freq">
+        <item>герц[Гц]-my_split-1.0</item>
+        <item>эксагерц-my_split-1e-18</item>
+        <item>петагерц-my_split-1e-15</item>
+        <item>терагерц-my_split-1e-12</item>
+        <item>гигагерц-my_split-1e-9</item>
+        <item>мегагерц-my_split-0.000001</item>
+        <item>килогерц-my_split-0.001</item>
+        <item>гектогерц-my_split-0.01</item>
+        <item>декагерц-my_split-0.1</item>
+        <item>децигерц-my_split-10</item>
+        <item>сантигерц-my_split-100</item>
+        <item>миллигерц-my_split-1000</item>
+        <item>микрогерц-my_split-1000000</item>
+        <item>наногерц-my_split-1000000000</item>
+        <item>пикогерц-my_split-1000000000000</item>
+        <item>фемтогерц-my_split-1e+15</item>
+        <item>аттогерц-my_split-1e+18</item>
+        <item>циклов в секунду-my_split-1.0</item>
+        <item>длина волны в эксаметрах[Эм]-my_split-1.0</item>
+        <item>длина волны в петаметрах-my_split-2.99792458e-7</item>
+        <item>длина волны в тераметрах-my_split-0.000299792458</item>
+        <item>длина волны в гигаметрах-my_split-0.299792458</item>
+        <item>длина волны в мегаметрах-my_split-299.792458</item>
+        <item>длина волны в километрах-my_split-299792.458</item>
+        <item>длина волны в гектометрах-my_split-2997924.58</item>
+        <item>длина волны в декаметрах-my_split-29979245.8</item>
+        <item>длина волны в метрах-my_split-299792458</item>
+        <item>длина волны в дециметрах-my_split-2997924580</item>
+        <item>длина волны в сантиметрах-my_split-29979245800</item>
+        <item>длина волны в миллиметрах-my_split-299792458000</item>
+        <item>длина волны в микрометрах-my_split-2.99792458e+14</item>
+        <item>Комптоновская длина волны электрона-my_split-1.235589789993e+20</item>
+        <item>Комптоновская длина волны протона-my_split-2.2687315327e+23</item>
+        <item>Комптоновская длина волны нейтрона-my_split-2.271858744728e+23</item>
+    </string-array>
 
 
+<string-array name="electrotehnic">
+    <item>Электрический заряд</item>
+    <item>Линейная плотность заряда</item>
+    <item>Поверхностная плотность заряда</item>
+    <item>Объемная плотность заряда</item>
+    <item>Электрический ток</item>
+    <item>Линейная плотность тока</item>
+    <item>Поверхностная плотность тока</item>
+    <item>Напряжённость электрического поля</item>
+    <item>Электростатический потенциал и напряжение</item>
+    <item>Электрическое сопротивление</item>
+    <item>Удельное электрическое сопротивление</item>
+    <item>Электрическая проводимость</item>
+    <item>Удельная электрическая проводимость</item>
+    <item>Электрическая емкость</item>
+    <item>Индуктивность</item>
+    <item>Уровни в dBm (дБм или дБмВт), dBV (дБВ), ваттах и др. единицах</item>
+</string-array>
+    
+    <string-array name="electricCharge">
+        <item>кулон[Кл]-my_split-1.0</item>
+        <item>мегакулон-my_split-0.000001</item>
+        <item>килокулон-my_split-0.001</item>
+        <item>милликулон-my_split-1000</item>
+        <item>микрокулон-my_split-1000000</item>
+        <item>нанокулон-my_split-1000000000</item>
+        <item>пикокулон-my_split-1000000000000</item>
+        <item>абкулон-my_split-0.1</item>
+        <item>единица заряда СГСМ-my_split-0.1</item>
+        <item>статкулон-my_split-2997924580</item>
+        <item>СГСЭ-единица заряда-my_split-2997924580</item>
+        <item>франклин-my_split-2997924580</item>
+        <item>ампер-час-my_split-0.0002777777777778</item>
+        <item>ампер-минута-my_split-0.01666666666667</item>
+        <item>ампер-секунда-my_split-1.0</item>
+        <item>фарадей (единица заряда)-my_split-0.00001036427214012</item>
+        <item>элементарный электрический заряд-my_split-6.241506363094e+18</item>
+    </string-array>
+    <string-array name="linearChargeDensity">
+        <item>кулон на метр[Кл/м]-my_split-1.0</item>
+        <item>кулон на сантиметр-my_split-0.01</item>
+        <item>кулон на дюйм-my_split-0.0254</item>
+        <item>абкулон на метр-my_split-0.1</item>
+        <item>абкулон на сантиметр-my_split-0.001</item>
+        <item>абкулон на дюйм-my_split-0.00254</item>
+    </string-array>
+    <string-array name="surfaceChargeDensity">
+        <item>кулон на квадратный метр[Кл/м<sup>2</sup>]-my_split-1.0</item>
+        <item>кулон на квадратный сантиметр-my_split-0.0001</item>
+        <item>кулон на квадратный дюйм-my_split-0.00064516</item>
+        <item>абкулон на квадратный метр-my_split-0.1</item>
+        <item>абкулон на кв. сантиметр-my_split-0.00001</item>
+        <item>абкулон на кв. дюйм-my_split-0.000064516</item>
+    </string-array>
+    <string-array name="bulkDensityCharge">
+        <item>кулон на кубический метр[Кл/м<sup>3</sup>]-my_split-1.0</item>
+        <item>кулон на кубический сантиметр-my_split-0.000001</item>
+        <item>кулон на кубический дюйм-my_split-0.000016387064</item>
+        <item>абкулон на кубический метр-my_split-0.1</item>
+        <item>абкулон на куб. сантиметр-my_split-1e-7</item>
+        <item>абкулон на куб. дюйм-my_split-0.0000016387064</item>
 
+    </string-array>
+    <string-array name="electricCurrent">
+        <item>ампер[А]-my_split-1.0</item>
+        <item>килоампер-my_split-0.001</item>
+        <item>миллиампер-my_split-1000</item>
+        <item>био-my_split-0.1</item>
+        <item>абампер-my_split-0.1</item>
+        <item>eдиница тока СГСМ-my_split-0.1</item>
+        <item>статампер-my_split-2997924536.843</item>
+        <item>Единица тока СГСЭ-my_split-2997924536.843</item>
+        <item>eдиница тока СГСМ, абампер-my_split-0.1</item>
+        <item>электростат. единица тока СГС-my_split-2997924536.843</item>
+    </string-array>
+    <string-array name="linearCurrentDensity">
+        <item>ампер на метр[А/м]-my_split-1.0</item>
+        <item>мпер на сантиметр-my_split-0.01</item>
+        <item>ампер на дюйм-my_split-0.0254</item>
+        <item>абампер на метр-my_split-0.1</item>
+        <item>абампер на сантиметр-my_split-0.001</item>
+        <item>абампер на дюйм-my_split-0.00254</item>
+        <item>эрстед-my_split-0.01256637062</item>
+        <item>гильберт-my_split-0.01256637062</item>
 
+    </string-array>
+    <string-array name="surfaceCurrentDensity">
+        <item>ампер на метр[А/м<sup>2</sup>]-my_split-1.0</item>
+        <item>ампер на квадратный сантиметр-my_split-0.0001</item>
+        <item>ампер на квадратный дюйм-my_split-0.00064516</item>
+        <item>ампер на квадратную тысячную-my_split-6.4516e-10</item>
+        <item>ампер на круговой мил-my_split-5.067074792e-10</item>
+        <item>абампер на квадратный сантиметр-my_split-0.00001</item>
+    </string-array>
+    <string-array name="electricFieldStrength">
+        <item>вольт на метр[В/м]-my_split-1.0</item>
+        <item>киловольт на метр-my_split-0.001</item>
+        <item>киловольт на сантиметр-my_split-0.00001</item>
+        <item>вольт на сантиметр-my_split-0.01</item>
+        <item>милливольт на метр-my_split-1000</item>
+        <item>микровольт на метр-my_split-1000000</item>
+        <item>киловольт на дюйм-my_split-0.0000254</item>
+        <item>вольт на дюйм-my_split-0.0254</item>
+        <item>вольт на тысячную-my_split-0.0000254</item>
+        <item>абвольт на сантиметр-my_split-1000000</item>
+        <item>статвольт на сантиметр-my_split-0.00003335646048</item>
+        <item>статвольт на дюйм-my_split-0.00008472540962</item>
+        <item>ньютон на кулон-my_split-1.0</item>
 
+    </string-array>
+    <string-array name="electrostatic">
+        <item>вольт[В]-my_split-1.0</item>
+        <item>ватт на ампер[Вт/А]-my_split-1.0</item>
+        <item>абвольт-my_split-100000000</item>
+        <item>eдиница электрического потенциала СГСМ-my_split-100000000</item>
+        <item>статвольт-my_split-0.003335640484669</item>
+        <item>единица электрического потенциала СГСЭ-my_split-0.003335640484669</item>
 
+    </string-array>
+    <string-array name="resistance">
+        <item>Ом[Ом]-my_split-1.0</item>
+        <item>мегаом-my_split-0.000001</item>
+        <item>микроом-my_split-1000000</item>
+        <item>вольт на ампер-my_split-1.0</item>
+        <item>обратный сименс-my_split-1.0</item>
+        <item>абом-my_split-1000000000</item>
+        <item>сопротивления СГСМ-my_split-1000000000</item>
+        <item>статом-my_split-1.11265002973e-12</item>
+        <item>единица сопротивления СГСЭ-my_split-1.11265002973e-12</item>
+        <item>квантованное сопротивление Холла-my_split-0.00003874046143981</item>
 
+    </string-array>
+    <string-array name="resistivity">
+        <item>ом метр[Ом*м]-my_split-1.0</item>
+        <item>ом сантиметр-my_split-100</item>
+        <item>ом дюйм-my_split-39.37007874</item>
+        <item>микроом сантиметр-my_split-100000000</item>
+        <item>микроом дюйм-my_split-39370078.74</item>
+        <item>абом сантиметр-my_split-100000000000</item>
+        <item>статом на сантиметр-my_split-1.112653456e-10</item>
+        <item>круговой мил ом на фут-my_split-601530493.4</item>
+    </string-array>
+    <string-array name="conductivity">
+        <item>сименс[См]-my_split-1.0</item>
+        <item>мегасименс-my_split-0.000001</item>
+        <item>килосименс-my_split-0.001</item>
+        <item>миллисименс-my_split-1000</item>
+        <item>микросименс-my_split-1000000</item>
+        <item>ампер на вольт-my_split-1.0</item>
+        <item>мо-my_split-1.0</item>
+        <item>gemmho-my_split-1000000</item>
+        <item>микромо-my_split-1000000</item>
+        <item>абмо-my_split-1e-9</item>
+        <item>статмо-my_split-899000000000</item>
+        <item>Квантованная проводимость Холла-my_split-25812.80562652</item>
+    </string-array>
+    <string-array name="specificConductivity">
+        <item>сименс на метр[См/м]-my_split-1.0</item>
+        <item>пикосименс на метр-my_split-1000000000000</item>
+        <item>мо на метр-my_split-1.0</item>
+        <item>мо на сантиметр-my_split-0.01</item>
+        <item>абмо на метр-my_split-1e-9</item>
+        <item>абмо на сантиметр-my_split-1e-11</item>
+        <item>статмо на метр-my_split-898752432400</item>
+        <item>статмо на сантиметр-my_split-8987524324</item>
+
+    </string-array>
+    <string-array name="capacitance">
+        <item>фарад[Ф]-my_split-1.0</item>
+        <item>эксафарад-my_split-1e-18</item>
+        <item>петафарад-my_split-1e-15</item>
+        <item>терафарад-my_split-1e-12</item>
+        <item>гигафарад-my_split-1e-9</item>
+        <item>мегафарад-my_split-0.000001</item>
+        <item>килофарад-my_split-0.001</item>
+        <item>гектофарад-my_split-0.01</item>
+        <item>декафарад-my_split-0.1</item>
+        <item>децифарад-my_split-10</item>
+        <item>сантифарад-my_split-100</item>
+        <item>миллифарад-my_split-1000</item>
+        <item>микрофарад-my_split-1000000</item>
+        <item>нанофарад-my_split-1000000000</item>
+        <item>пикофарад-my_split-1000000000000</item>
+        <item>фемтофарад-my_split-1e+15</item>
+        <item>аттофарад-my_split-1e+18</item>
+        <item>кулон на вольт-my_split-1.0</item>
+        <item>абфарад-my_split-1e-9</item>
+        <item>единица емкости СГСМ-my_split-1e-9</item>
+        <item>статфарад-my_split-898755178736.5</item>
+        <item>единица емкости СГСЭ-my_split-898755178736.5</item>
+    </string-array>
+    <string-array name="inductance">
+        <item>генри[Гн]-my_split-1.0</item>
+        <item>эксагенри-my_split-1e-18</item>
+        <item>петагенри-my_split-1e-15</item>
+        <item>терагенри-my_split-1e-12</item>
+        <item>гигагенри-my_split-1e-9</item>
+        <item>мегагенри-my_split-0.000001</item>
+        <item>килогенри-my_split-0.001</item>
+        <item>гектогенри-my_split-0.01</item>
+        <item>декагенри-my_split-0.1</item>
+        <item>децигенри-my_split-10</item>
+        <item>сантигенри-my_split-100</item>
+        <item>миллигенри-my_split-1000</item>
+        <item>микрогенри-my_split-1000000</item>
+        <item>наногенри-my_split-1000000000</item>
+        <item>пикогенри-my_split-1000000000000</item>
+        <item>фемтогенри-my_split-1e+15</item>
+        <item>аттогенри-my_split-1e+18</item>
+        <item>вебер/ампер-my_split-1.0</item>
+        <item>абгенри-my_split-1000000000</item>
+        <item>единица индуктивности СГСМ-my_split-1000000000</item>
+        <item>статгенри-my_split-1.11265002973e-12</item>
+        <item>единица индуктивности СГСЭ-my_split-1.11265002973e-12</item>
+    </string-array>
+    <string-array name="dbm">
+        <item>123</item>
+    </string-array>
+    
+ <string-array name="magnetic">
+     <item>Магнитодвижущая сила</item>
+     <item>Напряженность магнитного поля</item>
+     <item>Магнитный поток</item>
+     <item>Магнитная индукция</item>
+ </string-array>
+
+    <string-array name="magicForce">
+        <item>ампер[А]-my_split-1.0</item>
+        <item>ампер-виток-my_split-1.0</item>
+        <item>килоампер-виток-my_split-0.001</item>
+        <item>миллиампер-виток-my_split-1000</item>
+        <item>абампер-виток-my_split-0.1</item>
+        <item>гильберт-my_split-1.256637062</item>
+    </string-array>
+    <string-array name="magicField">
+        <item>ампер на метр[А/м]-my_split-1.0</item>
+        <item>ампер-виток на метр-my_split-1.0</item>
+        <item>килоампер на метр-my_split-0.001</item>
+        <item>эрстед-my_split-0.01256637061436</item>
+
+    </string-array>
+    <string-array name="magicStream">
+        <item>вебер[Вб]-my_split-1.0</item>
+        <item>милливебер-my_split-1000</item>
+        <item>микровебер-my_split-1000000</item>
+        <item>вольт-секунда-my_split-1.0</item>
+        <item>единичный магнитный полюс-my_split-7957747.154594</item>
+        <item>мегалиния-my_split-100</item>
+        <item>килолиния-my_split-100000</item>
+        <item>линия-my_split-100000000</item>
+        <item>максвелл-my_split-100000000</item>
+        <item>тесла-метр-my_split-1.0</item>
+        <item>тесла-сантиметр-my_split-10000</item>
+        <item>гаусс-сантиметр-my_split-100000000</item>
+        <item>квант магнитного потока-my_split-4.835976703185e+14</item>
+
+    </string-array>
+    <string-array name="magicInd">
+        <item>тесла[Тл]-my_split-1.0</item>
+        <item>вебер на кв. метр-my_split-1.0</item>
+        <item>вебер на кв. сантиметр-my_split-0.0001</item>
+        <item>вебер на кв. дюйм-my_split-0.00064516</item>
+        <item>максвелл на кв. метр-my_split-1.0</item>
+        <item>максвелл на кв. сантиметр-my_split-10000</item>
+        <item>максвелл на кв. дюйм-my_split-64516</item>
+        <item>гаусс-my_split-10000</item>
+        <item>линий на кв. сантиметр-my_split-10000</item>
+        <item>линий на кв. дюйм-my_split-64516</item>
+        <item>гамма-my_split-1000000000</item>
+    </string-array>
 
 </resources>
+
+

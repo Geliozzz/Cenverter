@@ -25,9 +25,5 @@
         android:background="@color/mNoColor"
         android:drawSelectorOnTop="false"
         android:scrollingCache="false"
-
         />
-
-
-
 </android.support.v4.widget.DrawerLayout>

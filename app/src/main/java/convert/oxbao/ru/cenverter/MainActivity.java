@@ -102,6 +102,40 @@ public class MainActivity extends ActionBarActivity {
                         groups.get(i).add(termod[j].split(mSplit)[0]);
                     }
                     break;
+                case 3:
+                    String[] gidr = getResources().getStringArray(R.array.gidravlic);
+                    for (int j = 0; j < gidr.length; j++)
+                    {
+                        groups.get(i).add(gidr[j].split(mSplit)[0]);
+                    }
+                    break;
+                case 4:
+                    String[] acus = getResources().getStringArray(R.array.acustic);
+                    for (int j = 0; j < acus.length; j++)
+                    {
+                        groups.get(i).add(acus[j].split(mSplit)[0]);
+                    }
+                    break;
+                case 5:
+                    String[] foto = getResources().getStringArray(R.array.fotometry);
+                    for (int j = 0; j < foto.length; j++)
+                    {
+                        groups.get(i).add(foto[j].split(mSplit)[0]);
+                    }
+                    break;
+                case 6:
+                    String[] elt = getResources().getStringArray(R.array.electrotehnic);
+                    for (int j = 0; j < elt.length; j++)
+                    {
+                        groups.get(i).add(elt[j].split(mSplit)[0]);
+                    }
+                case 7:
+                    String[] mg = getResources().getStringArray(R.array.magnetic);
+                    for (int j = 0; j < mg.length; j++)
+                    {
+                        groups.get(i).add(mg[j].split(mSplit)[0]);
+                    }
+                    break;
 
             }
         }
@@ -155,15 +189,6 @@ public class MainActivity extends ActionBarActivity {
         myDrawerList.setOnItemClickListener(new DrawerItemClickListner());
 
     }
-
-    /**
-     * **************function calculate*******************************
-     */
-
-
-    /**
-     * **************************************************************
-     */
 
     /*function formirate new fragment*/
     private Fragment newForm(int resource) {
@@ -278,6 +303,9 @@ public class MainActivity extends ActionBarActivity {
             case 15:
                 fragment = newForm(R.array.information);
                 break;
+
+            /* Mechanic*/
+
             case 1000:
                 fragment = newForm(R.array.AngleSpeed);
                 break;
@@ -300,7 +328,154 @@ public class MainActivity extends ActionBarActivity {
                 fragment = newForm(R.array.moment_power);
                 break;
 
+            /*termodinamic*/
+
+            case 2000:
+                fragment = newForm(R.array.specificHeatMass);
+                break;
+            case 2001:
+                fragment = newForm(R.array.specificHeatVolume);
+                break;
+            case 2002:
+                fragment = newForm(R.array.diffTemp);
+                break;
+            case 2003:
+                fragment = newForm(R.array.CTE);
+                break;
+            case 2004:
+                fragment = newForm(R.array.termResist);
+                break;
+            case 2005:
+                fragment = newForm(R.array.thermalConductivity);
+                break;
+            case 2006:
+                fragment = newForm(R.array.specificHeat);
+                break;
+            case 2007:
+                fragment = newForm(R.array.powerHeat);
+                break;
+            case 2008:
+                fragment = newForm(R.array.densityHeat);
+                break;
+            case 2009:
+                fragment = newForm(R.array.heatTransferCoefficient);
+                break;
+            /*gidra*/
+
+            case 3000:
+                fragment = newForm(R.array.volumeFlowRate);
+                break;
+            case 3001:
+                fragment = newForm(R.array.massFlowwRate);
+                break;
+            case 3002:
+                fragment = newForm(R.array.moleFlowRate);
+                break;
+            case 3003:
+                fragment = newForm(R.array.densityFlowMass);
+                break;
+            case 3004:
+                fragment = newForm(R.array.moleConcentration);
+                break;
+            case 3005:
+                fragment = newForm(R.array.moleConcentrationSolution);
+                break;
+            case 3006:
+                fragment = newForm(R.array.dinamicVisconsity);
+                break;
+            case 3007:
+                fragment = newForm(R.array.kinemVisconsity);
+                break;
+            case 3008:
+                fragment = newForm(R.array.surfaceTension);
+                break;
+            case 3009:
+                fragment = newForm(R.array.vaporPermeability);
+                break;
+            /*Acustic*/
+            case 4000:
+                fragment = newForm(R.array.volumeLevel);
+                break;
+            /*fotometry*/
+            case 5000:
+                fragment = newForm(R.array.brightness);
+                break;
+            case 5001:
+                fragment = newForm(R.array.lumionousIntensity);
+                break;
+            case 5002:
+                fragment = newForm(R.array.illumination);
+                break;
+            case 5003:
+                fragment = newForm(R.array.resolution);
+                break;
+            case 5004:
+                fragment = newForm(R.array.freq);
+                break;
+            /*Eltctric*/
+            case 6000:
+                fragment = newForm(R.array.electricCharge);
+                break;
+            case 6001:
+                fragment = newForm(R.array.linearChargeDensity);
+                break;
+            case 6002:
+                fragment = newForm(R.array.surfaceChargeDensity);
+                break;
+            case 6003:
+                fragment = newForm(R.array.bulkDensityCharge);
+                break;
+            case 6004:
+                fragment = newForm(R.array.electricCurrent);
+                break;
+            case 6005:
+                fragment = newForm(R.array.linearCurrentDensity);
+                break;
+            case 6006:
+                fragment = newForm(R.array.surfaceChargeDensity);
+                break;
+            case 6007:
+                fragment = newForm(R.array.electricFieldStrength);
+                break;
+            case 6008:
+                fragment = newForm(R.array.electrostatic);
+                break;
+            case 6009:
+                fragment = newForm(R.array.resistance);
+                break;
+            case 6010:
+                fragment = newForm(R.array.resistivity);
+                break;
+            case 6011:
+                fragment = newForm(R.array.conductivity);
+                break;
+            case 6012:
+                fragment = newForm(R.array.specificConductivity);
+                break;
+            case 6013:
+                fragment = newForm(R.array.capacitance);
+                break;
+            case 6014:
+                fragment = newForm(R.array.inductance);
+                break;
+            case 6015:
+                fragment = newForm(R.array.dbm);
+                break;
+            /*Magic*/
+            case 7000:
+                fragment = newForm(R.array.magicForce);
+                break;
+            case 7001:
+                fragment = newForm(R.array.magicField);
+                break;
+            case 7002:
+                fragment = newForm(R.array.magicStream);
+                break;
+            case 7003:
+                fragment = newForm(R.array.magicInd);
+                break;
             default:
+
                 break;
         }
         if (fragment != null) {
