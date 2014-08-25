@@ -1651,6 +1651,19 @@
         <item>гамма-my_split-1000000000</item>
     </string-array>
 
+    <string-array name="powerDozes">
+    <item>123</item>
+</string-array>
+    <string-array name="radiation">
+        <item>123</item>
+    </string-array>
+    <string-array name="expDoze">
+        <item>123</item>
+    </string-array>
+    <string-array name="takeDoze">
+        <item>123</item>
+    </string-array>
+
 </resources>
 
 
