@@ -23,7 +23,6 @@
         <item>Электротехника</item>
         <item>Магнетизм</item>
         <item>Радиация</item>
-        <item>Другие</item>
     </string-array>
 
 
@@ -1651,17 +1650,97 @@
         <item>гамма-my_split-1000000000</item>
     </string-array>
 
+    <string-array name="rad">
+        <item>Мощность поглощенной дозы ионизирующего излучения</item>
+        <item>Радиоактивность. Радиоактивный распад</item>
+        <item>Радиация. Экспозиционная доза</item>
+        <item>Радиация. Поглощённая доза</item>
+    </string-array>
+
     <string-array name="powerDozes">
-    <item>123</item>
+    <item>грей в секунду[Гр/с]-my_split-1.0</item>
+    <item>эксагрей в секунду-my_split-1e-18</item>
+    <item>петагрей в секунду-my_split-1e-15</item>
+    <item>терагрей в секунду-my_split-1e-12</item>
+    <item>гигагрей в секунду-my_split-1e-9</item>
+    <item>мегагрей в секунду-my_split-0.000001</item>
+    <item>килогрей в секунду-my_split-0.001</item>
+    <item>гектогрей в секунду-my_split-0.01</item>
+    <item>декагрей в секунду-my_split-0.1</item>
+    <item>децигрей в секунду-my_split-10</item>
+    <item>сантигрей в секунду-my_split-100</item>
+    <item>миллигрей в секунду-my_split-1000</item>
+    <item>микрогрей в секунду-my_split-1000000</item>
+    <item>наногрей в секунду-my_split-1000000000</item>
+    <item>пикогрей в секунду-my_split-1000000000000</item>
+    <item>фемтогрей в секунду-my_split-1e+15</item>
+    <item>аттогрей в секунду-my_split-1e+18</item>
+    <item>рад в секунду-my_split-100</item>
+    <item>джоуль на килограмм в секунду-my_split-1.0</item>
+    <item>ватт на килограмм-my_split-1.0</item>
+    <item>зиверт в секунду-my_split-1.0</item>
+    <item>миллизиверты в год-my_split-31557600000</item>
+    <item>миллизиверты в час-my_split-3600000</item>
+    <item>микрозиверты в час-my_split-3600000000</item>
+    <item>бэр в секунду-my_split-100</item>
+    <item>рентген в час-my_split-360000</item>
+    <item>миллирентген в час-my_split-360000000</item>
+    <item>микрорентген в час-my_split-360000000000</item>
+
 </string-array>
     <string-array name="radiation">
-        <item>123</item>
+        <item>беккерель[Бк]-my_split-1.0</item>
+        <item>терабеккерель-my_split-1e-12</item>
+        <item>гигабеккерель-my_split-1e-9</item>
+        <item>мегабеккерель-my_split-0.000001</item>
+        <item>килобеккерель-my_split-0.001</item>
+        <item>миллибеккерель-my_split-1000</item>
+        <item>кюри-my_split-2.702702702703e-11</item>
+        <item>килокюри-my_split-2.702702702703e-14</item>
+        <item>милликюри-my_split-2.702702702703e-8</item>
+        <item>обратная секунда-my_split-1.0</item>
+        <item>распад в секунду-my_split-1.0</item>
+        <item>распад в минуту-my_split-60</item>
+
     </string-array>
     <string-array name="expDoze">
-        <item>123</item>
+        <item>кулон на килограмм[Кл/кг]-my_split-1.0</item>
+        <item>милликулон на килограмм-my_split-1000</item>
+        <item>микрокулон на килограмм-my_split-1000000</item>
+        <item>рентген-my_split-3875.968992248</item>
+        <item>миллирентген-my_split-3875968.992248</item>
+        <item>микрорентген-my_split-3875968992.248</item>
+        <item>физический эквивалент рентгена (tissue roentgen)-my_split-3875.968992248</item>
+        <item>физический эквивалент рентгена (parker)-my_split-3875.968992248</item>
+        <item>фэр-my_split-3875.968992248</item>
     </string-array>
     <string-array name="takeDoze">
-        <item>123</item>
+        <item>рад[рад]-my_split-1.0</item>
+        <item>миллирад-my_split-1000</item>
+        <item>джоуль на килограмм-my_split-0.01</item>
+        <item>джоуль на грамм-my_split-0.00001</item>
+        <item>джоуль на сантиграмм-my_split-1e-7</item>
+        <item>джоуль на миллиграмм-my_split-1e-8</item>
+        <item>грей-my_split-0.01</item>
+        <item>эксагрей-my_split-1e-20</item>
+        <item>петагрей-my_split-1e-17</item>
+        <item>терагрей-my_split-1e-14</item>
+        <item>гигагрей-my_split-1e-11</item>
+        <item>мегагрей-my_split-1e-8</item>
+        <item>килогрей-my_split-0.00001</item>
+        <item>гектогрей-my_split-0.0001</item>
+        <item>декагрей-my_split-0.001</item>
+        <item>децигрей-my_split-0.1</item>
+        <item>сантигрей-my_split-1.0</item>
+        <item>миллигрей-my_split-10</item>
+        <item>микрогрей-my_split-10000</item>
+        <item>наногрей-my_split-10000000</item>
+        <item>пикогрей-my_split-10000000000</item>
+        <item>фемтогрей-my_split-1e+13</item>
+        <item>аттогрей-my_split-1e+16</item>
+        <item>зиверт-my_split-0.01</item>
+        <item>миллизиверт-my_split-10</item>
+        <item>микрозиверт-my_split-10000</item>
     </string-array>
 
 </resources>
