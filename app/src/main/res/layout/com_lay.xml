@@ -6,29 +6,32 @@
     android:layout_height="match_parent"
     android:background="@color/background_comlay">
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/spin4"
+        android:layout_height="120px"
         android:id="@+id/spinIn_moment" />
-
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120px"
         android:inputType="numberDecimal"
         android:ems="10"
+        android:background="@drawable/edt2"
         android:id="@+id/edMoment"
         android:hint="@string/EnterVal"
+
         android:linksClickable="false" />
 
     <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="120px"
         android:id="@+id/spinOut_moment"
-        android:focusable="false" />
 
+        />
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="120px"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
+        android:text="Полученное значение"
+
         android:id="@+id/tvMoment" />
 </LinearLayout>
