@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Cenverter</string>
+    <string name="app_name">Конвертер</string>
     <string name="menu">Меню</string>
     <string name="hello_world">Меню</string>
     <string name="action_settings">Settings</string>
@@ -706,48 +706,30 @@
     </string-array>
     <string-array name="information"> <!--Переделать-->
         <item>терабайт-my_split-1.0</item>
-        <item>бит-my_split-8e+12</item>
-        <item>ниббл-my_split-2e+12</item>
-        <item>байт-my_split-1000000000000</item>
-        <item>символ-my_split-1000000000000</item>
-        <item>машинное слово-my_split-500000000000</item>
-        <item>Машинное слово MAPM-my_split-250000000000</item>
-        <item>учетверенное слово-my_split-125000000000</item>
-        <item>блок-my_split-1953125000</item>
-        <item>килобит-my_split-7812500000</item>
-        <item>килобайт-my_split-976562500</item>
-        <item>килобайт (10³байт)-my_split-1000000000</item>
-        <item>мегабит-my_split-7629394.53125</item>
-        <item>мегабайт-my_split-953674.3164062</item>
-        <item>мегабайт (10^6 байт)-my_split-1000000</item>
-        <item>гигабит-my_split-7450.580596924</item>
-        <item>гигабайт-my_split-931.3225746155</item>
-        <item>гигабайт (10⁹ байт)-my_split-1000</item>
-        <item>терабит-my_split-7.275957614183</item>
-        <item>терабайт-my_split-0.9094947017729</item>
-        <item>петабит-my_split-0.007105427357601</item>
-        <item>петабайт-my_split-0.0008881784197001</item>
-        <item>петабайт (10¹⁵ байт)-my_split-0.001</item>
-        <item>эксабит-my_split-0.000006938893903907</item>
-        <item>эксабайт-my_split-8.673617379884e-7</item>
-        <item>эксабайт (10¹⁸ байт)-my_split-0.000001</item>
-        <item>дискета (3.5, дв. плотности)-my_split-1372058.30699</item>
-        <item>дискета (3.5, выс. пл.)-my_split-686029.1534949</item>
-        <item>дискета (3.5, расшир. пл.)-my_split-343014.5767475</item>
-        <item>дискета (5,25, дв. пл.)-my_split-2744116.61398</item>
-        <item>дискета (5,25, выс. пл.)-my_split-823755.7992408</item>
-        <item>Zip 100-my_split-9956.998511389</item>
-        <item>Zip 250-my_split-3982.799404556</item>
-        <item>Jaz 1GB-my_split-931.3225746155</item>
-        <item>Jaz 2GB-my_split-465.6612873077</item>
-        <item>CD (74 минуты)-my_split-1468.303072038</item>
-        <item>CD (80 минут)-my_split-1358.180342682</item>
-        <item>DVD (1 слой, 1 сторона)-my_split-198.1537392799</item>
-        <item>DVD (2 слоя, 1 сторона)-my_split-109.5673617195</item>
-        <item>DVD (1 слой, 1 сторона)-my_split-99.07686963994</item>
-        <item>DVD (2 слоя, 2 стороны)-my_split-54.78368085973</item>
-        <item>Однослойный диск Blu-ray-my_split-37.25290298462</item>
-        <item>Двухслойный диск Blu-ray-my_split-18.62645149231</item>
+        <item>байт-my_split-1.099511627776e+12</item>
+        <item>бит-my_split-8.796093022208e+12</item>
+        <item>ниббл-my_split-2.199023255552e+12</item>
+        <item>символ-my_split-1.099511627776e+12</item>
+        <item>машинное слово-my_split-549755813888</item>
+        <item>учетверенное слово-my_split-137438953472</item>
+        <item>килобайт-my_split-1073741824</item>
+        <item>мегабайт-my_split-1048576</item>
+        <item>гигабайт-my_split-1024</item>
+        <item>дискета (3.5, дв. плотности)-my_split-1508594.062522</item>
+        <item>дискета (3.5, выс. пл.)-my_split-754297.031261</item>
+        <item>дискета (3.5, расшир. пл.)-my_split-377148.5156305</item>
+        <item>дискета (5,25, дв. пл.)-my_split-3017188.125044</item>
+        <item>дискета (5,25, выс. пл.)-my_split-905729.0797132</item>
+        <item>Zip 100-my_split-10947.83564102</item>
+        <item>Zip 250-my_split-4379.134256408</item>
+        <item>Jaz 1GB-my_split-1024</item>
+        <item>Jaz 2GB-my_split-512</item>
+        <item>CD (74 минуты)-my_split-1614.416300805</item>
+        <item>CD (80 минут)-my_split-1493.335079395</item>
+        <item>DVD (1 слой, 1 сторона)-my_split-27.23404255319</item>
+        <item>DVD (2 слоя, 1 сторона)-my_split-15.05882352941</item>
+        <item>Однослойный диск Blu-ray-my_split-5.12</item>
+        <item>Двухслойный диск Blu-ray-my_split-2.56</item>
 
     </string-array>
  <!--endPopular-->
@@ -1395,7 +1377,7 @@
     <item>Удельная электрическая проводимость</item>
     <item>Электрическая емкость</item>
     <item>Индуктивность</item>
-    <item>Уровни в dBm (дБм или дБмВт), dBV (дБВ), ваттах и др. единицах</item>
+
 </string-array>
     
     <string-array name="electricCharge">
