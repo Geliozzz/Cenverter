@@ -1,6 +1,9 @@
 package convert.oxbao.ru.cenverter;
 
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -27,7 +30,18 @@ public class NumberFragment extends CommonFragment {
         OutSpinner.setAdapter(MainActivity.adapter);
 
         edtIn.setInputType(1);
+        Bitmap plSp = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.spin4);
+        Bitmap plEd = BitmapFactory.decodeResource(getActivity().getResources() ,R.drawable.edt2);
+        //  Bitmap pl3 = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.tst);
 
+        BitmapDrawable sp = new BitmapDrawable(plSp);
+        BitmapDrawable ed = new BitmapDrawable(plEd);
+        //  BitmapDrawable tst = new BitmapDrawable(pl3);
+
+        InSpinner.setBackgroundDrawable(sp);
+        OutSpinner.setBackgroundDrawable(sp);
+        edtIn.setBackgroundDrawable(ed);
+        tvOut.setBackgroundDrawable(ed);
 
 
         edtIn.addTextChangedListener(new TextWatcher() {

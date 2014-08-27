@@ -1,6 +1,7 @@
 package convert.oxbao.ru.cenverter;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -9,13 +10,17 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -129,6 +134,7 @@ public class MainActivity extends ActionBarActivity {
                     {
                         groups.get(i).add(elt[j].split(mSplit)[0]);
                     }
+                    break;
                 case 7:
                     String[] mg = getResources().getStringArray(R.array.magnetic);
                     for (int j = 0; j < mg.length; j++)
@@ -136,24 +142,24 @@ public class MainActivity extends ActionBarActivity {
                         groups.get(i).add(mg[j].split(mSplit)[0]);
                     }
                     break;
-
+                case 8:
+                    String[] rad = getResources().getStringArray(R.array.rad);
+                    for (int j = 0; j < rad.length; j++)
+                    {
+                        groups.get(i).add(rad[j].split(mSplit)[0]);
+                    }
+                    break;
             }
         }
 
 
         ExpListAdapter ExAdapter = new ExpListAdapter(groups, this, arrGroup);
-
-
         myDrawerList.setAdapter(ExAdapter);
-
-
-
        /* myDrawerList.setAdapter(new ArrayAdapter<String>(
                 this,
                 R.layout.drawer_list_item,
                 viewsNames
         ));*/
-
         //enabling action bar app icon and behaving if toogle button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -205,7 +211,8 @@ public class MainActivity extends ActionBarActivity {
 
         }
 
-        adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, title_name);
+       adapter = new ArrayAdapter<String>(MainActivity.this, R.layout.spinner, title_name);
+       // adapter = new MyCustomAdapter(MainActivity.this, R.layout.row, title_name);
 
         return new CommonFragment();
     }
@@ -247,6 +254,7 @@ public class MainActivity extends ActionBarActivity {
     public void setTitle(CharSequence title) {
         myTitle = title;
         getSupportActionBar().setTitle(myTitle);
+        getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.child_gradient));
     }
 
     private void displayView(int position, int i2) {
@@ -474,6 +482,19 @@ public class MainActivity extends ActionBarActivity {
             case 7003:
                 fragment = newForm(R.array.magicInd);
                 break;
+            /*rad*/
+            case 8000:
+                fragment = newForm(R.array.powerDozes);
+                break;
+            case 8001:
+                fragment = newForm(R.array.radiation);
+                break;
+            case 8002:
+                fragment = newForm(R.array.expDoze);
+                break;
+            case 8003:
+                fragment = newForm(R.array.takeDoze);
+                break;
             default:
 
                 break;
@@ -489,6 +510,50 @@ public class MainActivity extends ActionBarActivity {
         } else {
             // error in creating fragment
             Log.e("MainActivity", "Error in creating fragment");
+        }
+    }
+
+    public class MyCustomAdapter extends ArrayAdapter<String>{
+        private String[] tmp;
+
+        public MyCustomAdapter(Context context, int textViewResourceId,
+                               String[] objects) {
+
+            super(context, textViewResourceId, objects);
+            tmp = objects;
+            // TODO Auto-generated constructor stub
+        }
+
+        @Override
+        public View getDropDownView(int position, View convertView,
+                                    ViewGroup parent) {
+            // TODO Auto-generated method stub
+            return getCustomView(position, convertView, parent);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // TODO Auto-generated method stub
+            return getCustomView(position, convertView, parent);
+        }
+
+        public View getCustomView(int position, View convertView, ViewGroup parent) {
+            // TODO Auto-generated method stub
+            //return super.getView(position, convertView, parent);
+
+            LayoutInflater inflater=getLayoutInflater();
+            View row=inflater.inflate(R.layout.row, parent, false);
+            TextView label=(TextView)row.findViewById(R.id.weekofday);
+
+            label.setText(tmp[position]);
+
+
+
+            ImageView icon=(ImageView)row.findViewById(R.id.icon);
+
+
+
+            return row;
         }
     }
 }

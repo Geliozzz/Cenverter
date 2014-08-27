@@ -1,6 +1,9 @@
 package convert.oxbao.ru.cenverter;
 
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Editable;
@@ -43,6 +46,24 @@ public class CommonFragment extends Fragment {
         InSpinner.setAdapter(MainActivity.adapter);
         OutSpinner.setAdapter(MainActivity.adapter);
 
+
+        Bitmap plSp = BitmapFactory.decodeResource(getActivity().getResources() ,R.drawable.spin4);
+        Bitmap plEd = BitmapFactory.decodeResource(getActivity().getResources() ,R.drawable.edt2);
+      //  Bitmap pl3 = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.tst);
+
+        BitmapDrawable sp = new BitmapDrawable(plSp);
+        BitmapDrawable ed = new BitmapDrawable(plEd);
+      //  BitmapDrawable tst = new BitmapDrawable(pl3);
+
+        InSpinner.setBackgroundDrawable(sp);
+        OutSpinner.setBackgroundDrawable(sp);
+        edtIn.setBackgroundDrawable(ed);
+        tvOut.setBackgroundDrawable(ed);
+
+
+       /* Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "NotoSans-Bold.ttf");
+        tvOut.setTypeface(font);
+        edtIn.setTypeface(font);*/
 
 
         edtIn.addTextChangedListener(new TextWatcher() {
@@ -104,8 +125,8 @@ public class CommonFragment extends Fragment {
             e.printStackTrace();
             return getResources().getString(R.string.EnterVal);
         }
-        double RoundComUnit = new BigDecimal(comUnit).setScale(7, RoundingMode.UP).doubleValue();
-        RoundComUnit = new BigDecimal(RoundComUnit).setScale(6, RoundingMode.DOWN).doubleValue();
+        double RoundComUnit = new BigDecimal(comUnit).setScale(9, RoundingMode.UP).doubleValue();
+        RoundComUnit = new BigDecimal(RoundComUnit).setScale(8, RoundingMode.DOWN).doubleValue();
 
         return String.valueOf(RoundComUnit);
     }
