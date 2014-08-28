@@ -6,4 +6,7 @@
     <color name="mNoColor">#00000000</color>
     <color name="background_comlay">#fff9ffe5</color>
     <color name="mRed">#FFFF0A00</color>
+    <color name="mBlue">#ff819bc1</color>
+    <color name="mParentMenu">#ffdadbd9</color>
+    <color name="mChildMenu">#ff83d0f5</color>
 </resources>

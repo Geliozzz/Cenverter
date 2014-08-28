@@ -5,33 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_comlay"
+    android:isScrollContainer="true"
     >
-
     <Spinner
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:id="@+id/spinIn_moment" />
+        android:layout_height="60dp"
+        android:id="@+id/spinIn_moment"
+        />
     <EditText
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/edMoment"
         android:hint="@string/EnterVal"
         android:textSize="20sp"
-        android:linksClickable="false" />
-
+        android:textColor="@color/mBlue"
+        android:linksClickable="false"
+        android:textColorHint="@color/mBlue"
+        android:layout_marginTop="10dp"/>
     <Spinner
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:id="@+id/spinOut_moment"
-
+        android:layout_marginTop="10dp"
         />
-    <TextView
+    <EditText
         android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Полученное значение"
-
-        android:id="@+id/tvMoment" />
+        android:layout_height="60dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edSecond"
+        android:hint="@string/EnterVal"
+        android:textSize="20sp"
+        android:textColor="@color/mBlue"
+        android:linksClickable="false"
+        android:textColorHint="@color/mBlue"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>
