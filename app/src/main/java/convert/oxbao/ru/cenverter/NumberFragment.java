@@ -3,6 +3,7 @@ package convert.oxbao.ru.cenverter;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Editable;
@@ -13,38 +14,44 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 public class NumberFragment extends CommonFragment {
 
 
     @Override
+    /** Override need for change input type editText */
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+
         View rootView = inflater.inflate(R.layout.com_lay, container, false);
         InSpinner = (Spinner) rootView.findViewById(R.id.spinIn_moment);
         OutSpinner = (Spinner) rootView.findViewById(R.id.spinOut_moment);
-        edtIn = (EditText) rootView.findViewById(R.id.edMoment);
-        tvOut = (TextView) rootView.findViewById(R.id.tvMoment);
+        edFirst = (EditText) rootView.findViewById(R.id.edMoment);
+        edSecond = (EditText) rootView.findViewById(R.id.edSecond);
 
         InSpinner.setAdapter(MainActivity.adapter);
         OutSpinner.setAdapter(MainActivity.adapter);
 
-        edtIn.setInputType(1);
+        edFirst.setInputType(1);
+        edSecond.setInputType(1);
+
         Bitmap plSp = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.spin4);
-        Bitmap plEd = BitmapFactory.decodeResource(getActivity().getResources() ,R.drawable.edt2);
-        //  Bitmap pl3 = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.tst);
+        Bitmap plEd = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.edt2);
 
         BitmapDrawable sp = new BitmapDrawable(plSp);
         BitmapDrawable ed = new BitmapDrawable(plEd);
-        //  BitmapDrawable tst = new BitmapDrawable(pl3);
+
 
         InSpinner.setBackgroundDrawable(sp);
         OutSpinner.setBackgroundDrawable(sp);
-        edtIn.setBackgroundDrawable(ed);
-        tvOut.setBackgroundDrawable(ed);
+        edFirst.setBackgroundDrawable(ed);
+        edSecond.setBackgroundDrawable(ed);
 
+        Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "NotoSans-Bold.ttf");
+        edSecond.setTypeface(font);
+        edFirst.setTypeface(font);
 
-        edtIn.addTextChangedListener(new TextWatcher() {
+        edFirst.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
 
@@ -57,15 +64,43 @@ public class NumberFragment extends CommonFragment {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                tvOut.setText(calculate(index1, index2, edtIn.getText().toString(), MainActivity.coeff));
+                String calc1 = (calculate(index1, index2, edFirst.getText().toString(), MainActivity.coeff));
+                counter++;
+                if (counter <= 1) {
+                    edSecond.setText(calc1);
+                } else counter = 0;
+
+
             }
         });
 
-        InSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+        edSecond.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String calc2 = calculate(index2, index1, edSecond.getText().toString(), MainActivity.coeff);
+                counter++;
+                if (counter <= 1) {
+
+                    edFirst.setText(calc2);
+                } else counter = 0;
+            }
+        });
+
+        InSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 index1 = i;
-                tvOut.setText(calculate(index1, index2, edtIn.getText().toString(), MainActivity.coeff));
+
             }
 
             @Override
@@ -74,12 +109,12 @@ public class NumberFragment extends CommonFragment {
             }
         });
 
-        OutSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+        OutSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 index2 = i;
-                tvOut.setText(calculate(index1, index2, edtIn.getText().toString(), MainActivity.coeff));
+                edFirst.setText(edFirst.getText());
             }
 
             @Override
@@ -87,8 +122,6 @@ public class NumberFragment extends CommonFragment {
 
             }
         });
-
-
 
 
         return rootView;
@@ -99,15 +132,12 @@ public class NumberFragment extends CommonFragment {
         String ret = "";
 
         try {
+            int tmp = Integer.parseInt(inData, Integer.parseInt(choose[i1]));
+            ret = Integer.toString(tmp, Integer.parseInt(choose[i2]));
 
-
-                int tmp = Integer.parseInt(inData, Integer.parseInt(choose[i1]));
-                ret = Integer.toString(tmp, Integer.parseInt(choose[i2]));
-
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
-            return getResources().getString(R.string.invalid);
+            return "";
 
         }
 

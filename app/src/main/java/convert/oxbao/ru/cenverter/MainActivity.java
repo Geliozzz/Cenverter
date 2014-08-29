@@ -1,7 +1,6 @@
 package convert.oxbao.ru.cenverter;
 
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -10,17 +9,13 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -70,7 +65,7 @@ public class MainActivity extends ActionBarActivity {
         myDrawerList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView expandableListView, View view, int i, int i2, long l) {
-                Toast.makeText(getApplicationContext(), String.valueOf(i*1000 + i2)  , Toast.LENGTH_SHORT).show();
+
                 displayView(i, i2);
                 return false;
             }
@@ -228,7 +223,7 @@ public class MainActivity extends ActionBarActivity {
                 coeff[i] = tmp[1];
             }
         }
-        adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, title_name);
+        adapter = new ArrayAdapter<String>(this, R.layout.spinner, title_name);
     }
 
 
@@ -254,7 +249,8 @@ public class MainActivity extends ActionBarActivity {
     public void setTitle(CharSequence title) {
         myTitle = title;
         getSupportActionBar().setTitle(myTitle);
-        getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.child_gradient));
+        getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.title2));
+        Toast.makeText(getApplicationContext(), title  , Toast.LENGTH_SHORT).show();
     }
 
     private void displayView(int position, int i2) {
@@ -513,7 +509,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public class MyCustomAdapter extends ArrayAdapter<String>{
+  /*  public class MyCustomAdapter extends ArrayAdapter<String>{
         private String[] tmp;
 
         public MyCustomAdapter(Context context, int textViewResourceId,
@@ -555,5 +551,5 @@ public class MainActivity extends ActionBarActivity {
 
             return row;
         }
-    }
+    }*/
 }

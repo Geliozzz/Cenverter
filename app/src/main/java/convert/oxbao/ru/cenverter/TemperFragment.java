@@ -46,7 +46,7 @@ public class TemperFragment extends CommonFragment {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return getResources().getString(R.string.EnterVal);
+            return "";
         }
         return String.valueOf(comUnit);
     }
