@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@android:id/text1"
-style="?attr/spinnerDropDownItemStyle"
+android:id="@+id/spinText"
+style="?android:attr/spinnerDropDownItemStyle"
 android:singleLine="true"
-android:layout_width="match_parent"
+android:layout_width="fill_parent"
 android:layout_height="?attr/dropdownListPreferredItemHeight"
-android:ellipsize="marquee"/>
+    android:isScrollContainer="true"
+    android:padding="7dp"
+    android:textSize="20sp"
+    android:layout_gravity="center"
+    android:textColor="@color/mWhite"
+    android:background="@drawable/spin6"
+    android:typeface="normal"
+android:ellipsize="marquee"
+    android:textStyle="bold"
+    android:scrollHorizontally="true"/>
+
+    <!--style="?attr/spinnerDropDownItemStyle"-->

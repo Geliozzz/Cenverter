@@ -9,6 +9,7 @@
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
+        android:isScrollContainer="true"
         android:layout_height="match_parent" />
 
     <ExpandableListView
