@@ -22,7 +22,7 @@
         android:textSize="20sp"
         android:textColor="@color/mBlue"
         android:linksClickable="false"
-        android:textColorHint="@color/mBlue"
+        android:textColorHint="@color/mWhite"
         android:layout_marginTop="10dp"/>
     <Spinner
         android:layout_width="fill_parent"
@@ -40,6 +40,6 @@
         android:textSize="20sp"
         android:textColor="@color/mBlue"
         android:linksClickable="false"
-        android:textColorHint="@color/mBlue"
+        android:textColorHint="@color/mWhite"
         android:layout_marginTop="10dp"/>
 </LinearLayout>
