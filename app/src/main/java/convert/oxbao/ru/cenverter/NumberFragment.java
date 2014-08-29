@@ -100,7 +100,7 @@ public class NumberFragment extends CommonFragment {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 index1 = i;
-
+                edFirst.setText(edFirst.getText());
             }
 
             @Override

@@ -32,7 +32,6 @@ public class CommonFragment extends Fragment {
                             Переменная считает сколько раз была вызвана функция.*/
 
 
-
     public CommonFragment() {
 
     }
@@ -64,7 +63,6 @@ public class CommonFragment extends Fragment {
         edSecond.setBackgroundDrawable(ed);
 
 
-
         Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "NotoSans-Bold.ttf");
         edSecond.setTypeface(font);
         edFirst.setTypeface(font);
@@ -84,8 +82,7 @@ public class CommonFragment extends Fragment {
             public void afterTextChanged(Editable editable) {
                 String calc1 = (calculate(index1, index2, edFirst.getText().toString(), MainActivity.coeff));
                 counter++;
-                if (counter <= 1)
-                {
+                if (counter <= 1) {
                     edSecond.setText(calc1);
                 } else counter = 0;
 
@@ -108,8 +105,7 @@ public class CommonFragment extends Fragment {
             public void afterTextChanged(Editable editable) {
                 String calc2 = calculate(index2, index1, edSecond.getText().toString(), MainActivity.coeff);
                 counter++;
-                if (counter <= 1)
-                {
+                if (counter <= 1) {
 
                     edFirst.setText(calc2);
                 } else counter = 0;
@@ -122,7 +118,7 @@ public class CommonFragment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 index1 = i;
-
+                edFirst.setText(edFirst.getText());
             }
 
             @Override
@@ -144,8 +140,6 @@ public class CommonFragment extends Fragment {
 
             }
         });
-
-
         return rootView;
     }
 
@@ -163,12 +157,9 @@ public class CommonFragment extends Fragment {
         double RoundComUnit = new BigDecimal(comUnit).setScale(9, RoundingMode.UP).doubleValue();
         RoundComUnit = new BigDecimal(RoundComUnit).setScale(8, RoundingMode.DOWN).doubleValue();
 
-        if (RoundComUnit == 0)
-        {
+        if (RoundComUnit == 0) {
             return String.valueOf(comUnit);
         }
-
-
         return String.valueOf(RoundComUnit);
     }
 
