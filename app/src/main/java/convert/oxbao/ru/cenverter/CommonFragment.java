@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -30,6 +31,7 @@ public class CommonFragment extends Fragment {
     protected int counter; /*Считает количество вызовов функций записи в поле. Нужна для избежания ошибки переполнения стека.
                             События изменения текста вызываюит события изменения второго текста. И вызовы становятся бесконечыми.
                             Переменная считает сколько раз была вызвана функция.*/
+
 
 
 
@@ -51,6 +53,7 @@ public class CommonFragment extends Fragment {
         OutSpinner.setAdapter(MainActivity.adapter);
 
 
+
         Bitmap plSp = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.spin4);
         Bitmap plEd = BitmapFactory.decodeResource(getActivity().getResources(), R.drawable.edt2);
 
@@ -68,6 +71,34 @@ public class CommonFragment extends Fragment {
         Typeface font = Typeface.createFromAsset(getActivity().getAssets(), "NotoSans-Bold.ttf");
         edSecond.setTypeface(font);
         edFirst.setTypeface(font);
+
+        InSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                index1 = i;
+                edFirst.setText(edFirst.getText());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+        OutSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                index2 = i;
+                edFirst.setText(edFirst.getText());
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         edFirst.addTextChangedListener(new TextWatcher() {
             @Override
@@ -118,35 +149,23 @@ public class CommonFragment extends Fragment {
             }
         });
 
-        InSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                index1 = i;
 
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
-
-        OutSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                index2 = i;
-                edFirst.setText(edFirst.getText());
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
 
 
         return rootView;
+    }
+
+    @Override
+    public void onViewStateRestored(Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+        edFirst.setText(MainActivity.txtEdit);
+       // Toast.makeText(getActivity(), "restor", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        MainActivity.txtEdit = edFirst.getText().toString();
     }
 
     protected String calculate(int i1, int i2, String inData, String[] choose) {

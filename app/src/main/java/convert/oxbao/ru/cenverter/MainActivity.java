@@ -23,6 +23,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends ActionBarActivity {
 
+    public static String txtEdit;
+
     private DrawerLayout myDrawerLayout;
     private ExpandableListView myDrawerList;
     private ActionBarDrawerToggle myDrawerToogle;
