@@ -159,7 +159,6 @@ public class CommonFragment extends Fragment {
     public void onViewStateRestored(Bundle savedInstanceState) {
         super.onViewStateRestored(savedInstanceState);
         edFirst.setText(MainActivity.txtEdit);
-       // Toast.makeText(getActivity(), "restor", Toast.LENGTH_SHORT).show();
     }
 
     @Override

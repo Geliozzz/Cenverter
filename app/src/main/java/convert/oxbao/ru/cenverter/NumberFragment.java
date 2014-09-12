@@ -127,6 +127,8 @@ public class NumberFragment extends CommonFragment {
         return rootView;
     }
 
+
+
     @Override
     protected String calculate(int i1, int i2, String inData, String[] choose) {
         String ret = "";

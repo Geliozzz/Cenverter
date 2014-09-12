@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends ActionBarActivity {
 
-    public static String txtEdit;
+    public static String txtEdit; /*need for save instance*/
 
     private DrawerLayout myDrawerLayout;
     private ExpandableListView myDrawerList;
@@ -42,8 +42,6 @@ public class MainActivity extends ActionBarActivity {
     private class DrawerItemClickListner implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            //display view for selected nav drawer item
-            //   displayView(i, 0);
         }
     }
 
@@ -55,14 +53,11 @@ public class MainActivity extends ActionBarActivity {
         myTitle = getTitle();
         myDrawerTitle = getResources().getString(R.string.menu);
 
-        //load slide menu items
-        // viewsNames = getResources().getStringArray(R.array.);
         myDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         /*Drop shadow*/
         myDrawerLayout.setDrawerShadow(R.drawable.abc_search_dropdown_dark, GravityCompat.START);
 
 
-       /* myDrawerList = (ListView) findViewById(R.id.left_drawer);*/
         myDrawerList = (ExpandableListView) findViewById(R.id.exListView);
         myDrawerList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
@@ -152,11 +147,7 @@ public class MainActivity extends ActionBarActivity {
 
         ExpListAdapter ExAdapter = new ExpListAdapter(groups, this, arrGroup);
         myDrawerList.setAdapter(ExAdapter);
-       /* myDrawerList.setAdapter(new ArrayAdapter<String>(
-                this,
-                R.layout.drawer_list_item,
-                viewsNames
-        ));*/
+
         //enabling action bar app icon and behaving if toogle button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -205,11 +196,11 @@ public class MainActivity extends ActionBarActivity {
             if (tmp.length >= 2) {
                 coeff[i] = tmp[1];
             }
-
         }
 
        adapter = new ArrayAdapter<String>(MainActivity.this, R.layout.spinner, title_name);
        // adapter = new MyCustomAdapter(MainActivity.this, R.layout.row, title_name);
+        txtEdit = "";
 
         return new CommonFragment();
     }
@@ -241,8 +232,6 @@ public class MainActivity extends ActionBarActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        /*int id = item.getItemId();
-        return id == R.id.action_settings || super.onOptionsItemSelected(item);*/
         if (myDrawerToogle.onOptionsItemSelected(item)) return true;
         return super.onOptionsItemSelected(item);
     }
@@ -511,47 +500,4 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-  /*  public class MyCustomAdapter extends ArrayAdapter<String>{
-        private String[] tmp;
-
-        public MyCustomAdapter(Context context, int textViewResourceId,
-                               String[] objects) {
-
-            super(context, textViewResourceId, objects);
-            tmp = objects;
-            // TODO Auto-generated constructor stub
-        }
-
-        @Override
-        public View getDropDownView(int position, View convertView,
-                                    ViewGroup parent) {
-            // TODO Auto-generated method stub
-            return getCustomView(position, convertView, parent);
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            // TODO Auto-generated method stub
-            return getCustomView(position, convertView, parent);
-        }
-
-        public View getCustomView(int position, View convertView, ViewGroup parent) {
-            // TODO Auto-generated method stub
-            //return super.getView(position, convertView, parent);
-
-            LayoutInflater inflater=getLayoutInflater();
-            View row=inflater.inflate(R.layout.row, parent, false);
-            TextView label=(TextView)row.findViewById(R.id.weekofday);
-
-            label.setText(tmp[position]);
-
-
-
-            ImageView icon=(ImageView)row.findViewById(R.id.icon);
-
-
-
-            return row;
-        }
-    }*/
 }
